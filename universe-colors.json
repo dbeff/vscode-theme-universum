@@ -1,0 +1,36 @@
+{
+  "background": "#151722",
+  "foreground": "#C0CAF5",
+  "selection": "#66719040",
+  "comments": "#5f6582",
+  "keywords": "#DE5971",
+  "class": "#9D7CD8",
+  "variables": "#BB9AF7",
+  "params": "#E0AF68",
+  "types": "#FF9E64",
+  "string": "#C3E88D",
+  "punctuation": "#BA3C97",
+
+  "blueLighter": "#7DCFFF",
+  "blueLight": "#7DCFFF",
+  "blueRegular": "#7DCFFF",
+  "blueDark": "#7AA2F7",
+
+  "greenRegular": "#73DACA",
+  "greenDark": "#0DB9D7",
+
+  "purpleLight": "",
+  "purpleRegular": "#BB9AF7",
+  "purpleDark": "#9D7CD8",
+
+
+  "yellowBright": "#FFCB6B",
+  "yellowRegular": "#E0AF68",
+  "yellowDark": "#FF9E64",
+
+  "redLight": "#EE7F94",
+  "redRegular": "#DE5978",
+  "redDark": "#BA3C97",
+
+  "json-key": "#0DB9D7"
+}

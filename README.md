@@ -1,5 +1,14 @@
 # universe README
 
+## Guide
+
+https://code.visualstudio.com/api/references/theme-color
+https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
+
+## Publishing
+
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+
 ## Working with Markdown
 
 You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
