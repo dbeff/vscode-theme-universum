@@ -451,7 +451,7 @@
       "name": "Object",
       "scope": ["meta.object"],
       "settings": {
-        "foreground": "#b4e0fadb"
+        "foreground": "#C0CAF5"
       }
     },
     {
@@ -493,14 +493,14 @@
       "name": "Variables",
       "scope": ["variable"],
       "settings": {
-        "foreground": "#c0e2f5e6"
+        "foreground": "#C0CAF5"
       }
     },
     {
       "name": "Class",
       "scope": ["meta.class"],
       "settings": {
-        "foreground": "#FF9E64"
+        "foreground": "#7DCFFF"
       }
     },
     {
@@ -518,7 +518,7 @@
       "name": "Parameter",
       "scope": ["variable.parameter"],
       "settings": {
-        "foreground": "#b4e0fadb"
+        "foreground": "#C0CAF5"
       }
     },
 
