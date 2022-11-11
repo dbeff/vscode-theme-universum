@@ -497,6 +497,13 @@
       }
     },
     {
+      "name": "Variables Other",
+      "scope": ["variable.other.object", "variable.other.readwrite.alias"],
+      "settings": {
+        "foreground": "#7DCFFF"
+      }
+    },
+    {
       "name": "Class",
       "scope": ["meta.class"],
       "settings": {
@@ -621,7 +628,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        // "foreground": "#0DB9D7"
+        "foreground": "#0DB9D7"
       }
     },
 
