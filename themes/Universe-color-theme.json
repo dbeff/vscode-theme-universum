@@ -430,7 +430,7 @@
         "constant.escape"
       ],
       "settings": {
-        "foreground": "#FF9E64"
+        "foreground": "#BB9AF7"
       }
     },
     {
@@ -461,6 +461,14 @@
         "foreground": "#DE5978"
       }
     },
+
+    {
+      "name": "Keyword Operator",
+      "scope": ["keyword.operator"],
+      "settings": {
+        "foreground": "#7DCFFF"
+      }
+    },
     {
       "name": "Storage",
       "scope": ["storage", "storage"],
@@ -472,35 +480,42 @@
       "name": "Type, Enum, Interface",
       "scope": ["meta.type", "meta.interface", "meta.enum"],
       "settings": {
-        "foreground": "#E0AF68"
+        "foreground": "#FFAF87"
       }
     },
     {
       "name": "Decorator",
       "scope": ["meta.decorator"],
       "settings": {
-        "foreground": "#DE5971"
+        "foreground": "#DE5978"
       }
     },
     {
       "name": "Decorator",
       "scope": ["punctuation.decorator"],
       "settings": {
-        "foreground": "#EE7F94"
+        "foreground": "#DE5978"
       }
     },
     {
       "name": "Variables",
       "scope": ["variable"],
       "settings": {
-        "foreground": "#C0CAF5"
+        "foreground": "#A9B1D6"
       }
     },
     {
       "name": "Variables Other",
       "scope": ["variable.other.object", "variable.other.readwrite.alias"],
       "settings": {
-        "foreground": "#7DCFFF"
+        "foreground": "#EE7F94"
+      }
+    },
+    {
+      "name": "Variables Other Property",
+      "scope": ["variable.other.property"],
+      "settings": {
+        "foreground": "#ef9fad"
       }
     },
     {
@@ -514,18 +529,19 @@
       "name": "Method",
       "scope": [
         "meta.method",
-        "meta.function-call",
+        "meta.function",
+        // "meta.function variable.other.object",
         "meta.interface meta.definition.property"
       ],
       "settings": {
-        "foreground": "#7DCFFF"
+        "foreground": "#A9B1D6"
       }
     },
     {
       "name": "Parameter",
       "scope": ["variable.parameter"],
       "settings": {
-        "foreground": "#C0CAF5"
+        "foreground": "#A9B1D6"
       }
     },
 
@@ -547,7 +563,7 @@
       "name": "Tag attributes",
       "scope": ["meta.tag.attributes", "meta.attribute"],
       "settings": {
-        "foreground": "#E0AF68"
+        "foreground": "#7DCFFF"
       }
     },
 
