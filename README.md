@@ -5,6 +5,10 @@
 https://code.visualstudio.com/api/references/theme-color
 https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
 
+## Editor
+
+https://themes.vscode.one/
+
 ## Publishing
 
 https://code.visualstudio.com/api/working-with-extensions/publishing-extension
