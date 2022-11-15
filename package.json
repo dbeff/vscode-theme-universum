@@ -1,8 +1,11 @@
 {
   "name": "universe",
-  "displayName": "Universe",
-  "description": "Universe color theme",
-  "version": "0.0.1",
+  "displayName": "Universe Theme",
+  "description": "Universe Theme for VS Code",
+  "repository": "https://github.com/dbeff/vscode-theme-universe",
+  "version": "1.0.0",
+  "icon": "resources/logo.png",
+  "publisher": "dbeff",
   "engines": {
     "vscode": "^1.73.0"
   },
