@@ -1,8 +1,8 @@
 {
-  "name": "universe",
-  "displayName": "Universe Theme",
-  "description": "Universe Theme for VS Code",
-  "repository": "https://github.com/dbeff/vscode-theme-universe",
+  "name": "Universum",
+  "displayName": "Universum Theme",
+  "description": "Universum Theme for VS Code",
+  "repository": "https://github.com/dbeff/vscode-theme-universum",
   "version": "1.0.0",
   "icon": "resources/logo.png",
   "publisher": "dbeff",
@@ -15,9 +15,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Universe",
+        "label": "Universum",
         "uiTheme": "vs-dark",
-        "path": "./themes/Universe-color-theme.json"
+        "path": "./themes/universum-color-theme.json"
       }
     ]
   }

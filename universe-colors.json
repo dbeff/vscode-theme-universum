@@ -1,7 +1,7 @@
 {
   "background": "#151722",
-  "foreground": "#C0CAF5",
-  "selection": "#66719040",
+  "foreground": "#a9b1d6",
+  "selection": "#454859a7",
   "comments": "#5f6582",
   "keywords": "#DE5971",
   "class": "#9D7CD8",
@@ -16,15 +16,16 @@
   "blueRegular": "#7DCFFF",
   "blueDark": "#7AA2F7",
 
+  "greenLight": "#a7e9df",
   "greenRegular": "#73DACA",
-  "greenDark": "#0DB9D7",
+  "greenDark": "#0dc9d7",
 
   "purpleLight": "",
   "purpleRegular": "#BB9AF7",
   "purpleDark": "#9D7CD8",
 
-
   "yellowBright": "#FFCB6B",
+  "yellowLight": "#e5ba69",
   "yellowRegular": "#E0AF68",
   "yellowDark": "#FF9E64",
 
@@ -32,5 +33,7 @@
   "redRegular": "#DE5978",
   "redDark": "#BA3C97",
 
-  "json-key": "#0DB9D7"
+  "json-key": "#0DB9D7",
+
+  "keyword": "#ED6A5E"
 }
