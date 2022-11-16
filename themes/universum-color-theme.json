@@ -444,7 +444,7 @@
       "name": "String, Symbols",
       "scope": ["string"],
       "settings": {
-        "foreground": "#70d598dd"
+        "foreground": "#70d598"
       }
     },
     {
@@ -521,7 +521,6 @@
         "meta.method",
         "meta.function",
         "meta.function-call",
-
         "support.function"
       ],
       "settings": {
@@ -584,6 +583,13 @@
       }
     },
     {
+      "name": "JSON property",
+      "scope": ["support.type.property-name.json"],
+      "settings": {
+        "foreground": "#E5BA69"
+      }
+    },
+    {
       "name": "CSS Classes",
       "scope": ["entity.other.attribute-name.class"],
       "settings": {
@@ -601,28 +607,28 @@
         "source.postcss support.type.property-name"
       ],
       "settings": {
+        "foreground": "#dac6a2"
+      }
+    },
+    {
+      "name": "CSS ID",
+      "scope": ["meta.selector"],
+      "settings": {
+        "foreground": "#E5BA69"
+      }
+    },
+    {
+      "name": "CSS Value",
+      "scope": ["meta.property-value.css"],
+      "settings": {
         "foreground": "#0dc9d7"
-      }
-    },
-    {
-      "name": "CSS ID",
-      "scope": ["meta.selector"],
-      "settings": {
-        "foreground": "#E5BA69"
-      }
-    },
-    {
-      "name": "CSS ID",
-      "scope": ["meta.selector"],
-      "settings": {
-        "foreground": "#E5BA69"
       }
     },
     {
       "name": "Inserted",
       "scope": ["markup.inserted"],
       "settings": {
-        "foreground": "#70d598dd"
+        "foreground": "#70d598"
       }
     },
     {
@@ -741,7 +747,7 @@
       "scope": ["markup.underline"],
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#70d598dd"
+        "foreground": "#70d598"
       }
     },
     {
@@ -787,7 +793,7 @@
       "name": "Markdown - Link Anchor",
       "scope": ["constant.other.reference.link.markdown"],
       "settings": {
-        "foreground": "#70d598dd"
+        "foreground": "#70d598"
       }
     },
     {
