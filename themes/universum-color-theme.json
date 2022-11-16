@@ -583,6 +583,20 @@
       }
     },
     {
+      "name": "YML",
+      "scope": ["entity.name.tag.yaml"],
+      "settings": {
+        "foreground": "#E5BA69"
+      }
+    },
+    {
+      "name": "YML unquoted",
+      "scope": ["string.unquoted.plain.out.yaml", "source.yaml punctuation"],
+      "settings": {
+        "foreground": "#AAB1D3"
+      }
+    },
+    {
       "name": "JSON property",
       "scope": ["support.type.property-name.json"],
       "settings": {
