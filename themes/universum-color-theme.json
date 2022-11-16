@@ -444,7 +444,7 @@
       "name": "String, Symbols",
       "scope": ["string"],
       "settings": {
-        "foreground": "#70d598"
+        "foreground": "#59bd81"
       }
     },
     {
@@ -628,7 +628,7 @@
       "name": "Inserted",
       "scope": ["markup.inserted"],
       "settings": {
-        "foreground": "#70d598"
+        "foreground": "#59bd81"
       }
     },
     {
@@ -747,7 +747,7 @@
       "scope": ["markup.underline"],
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#70d598"
+        "foreground": "#59bd81"
       }
     },
     {
@@ -793,7 +793,7 @@
       "name": "Markdown - Link Anchor",
       "scope": ["constant.other.reference.link.markdown"],
       "settings": {
-        "foreground": "#70d598"
+        "foreground": "#59bd81"
       }
     },
     {
