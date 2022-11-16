@@ -197,6 +197,11 @@
     "editorInfo.foreground": "#0da0ba",
     "editorHint.foreground": "#0da0ba",
 
+    "editorInlayHint.background": "#383955c6",
+    "editorInlayHint.foreground": "#ffffff80",
+    "editorInlayHint.typeForeground": "#d3c8b6",
+    "editorInlayHint.parameterForeground": "#84cedc",
+
     "editorGutter.modifiedBackground": "#394b70",
     "editorGutter.addedBackground": "#164846",
     "editorGutter.deletedBackground": "#823c41",
