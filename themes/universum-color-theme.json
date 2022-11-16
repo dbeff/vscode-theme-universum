@@ -276,8 +276,9 @@
     "panelTitle.activeForeground": "#787c99",
     "panelTitle.inactiveForeground": "#42465d",
     "panelTitle.activeBorder": "#181A28",
-    "panelInput.border": "#181A28",
+    "panelInput.border": "#101019",
     "panelSectionHeader.background": "#00000030",
+    "panelSectionHeader.border": "#101019",
 
     "statusBar.foreground": "#787c99",
     "statusBar.background": "#181A28",
@@ -288,7 +289,7 @@
     "statusBar.debuggingForeground": "#00000098",
 
     "statusBarItem.activeBackground": "#00000020",
-    "statusBarItem.hoverBackground": "#00000030",
+    "statusBarItem.hoverBackground": "#ffffff10",
     "statusBarItem.prominentBackground": "#00000030",
     "statusBarItem.prominentHoverBackground": "#00000030",
 
