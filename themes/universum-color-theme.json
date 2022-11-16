@@ -208,6 +208,7 @@
 
     "editorGroup.border": "#101019",
     "editorGroup.dropBackground": "#171825",
+    "editorGroup.emptyBackground": "#1B1D2B",
     "editorGroupHeader.tabsBorder": "#101019",
     "editorGroupHeader.tabsBackground": "#181A28",
     "editorGroupHeader.noTabsBackground": "#181A28",
@@ -357,9 +358,9 @@
     "gitDecoration.modifiedResourceForeground": "#6183bb",
     "gitDecoration.ignoredResourceForeground": "#515670",
     "gitDecoration.deletedResourceForeground": "#914c54",
-    "gitDecoration.renamedResourceForeground": "#449dab",
-    "gitDecoration.addedResourceForeground": "#449dab",
-    "gitDecoration.untrackedResourceForeground": "#449dab",
+    "gitDecoration.renamedResourceForeground": "#44ab93",
+    "gitDecoration.addedResourceForeground": "#44ab93",
+    "gitDecoration.untrackedResourceForeground": "#44ab93",
     "gitDecoration.conflictingResourceForeground": "#e0af68cc",
     "gitDecoration.stageDeletedResourceForeground": "#914c54",
     "gitDecoration.stageModifiedResourceForeground": "#6183bb",
@@ -409,12 +410,12 @@
     "menu.separatorBackground": "#101019",
     "menu.border": "#101019",
 
-    "keybindingLabel.foreground": "#00000090",
-    "keybindingLabel.background": "#3d59a1",
-    "keybindingLabel.border": "#3d59a1",
-    "keybindingLabel.bottomBorder": "#3d59a1",
-    "keybindingTable.headerBackground": "#3d59a1",
-    "keybindingTable.rowsBackground": "#3d59a1"
+    "keybindingLabel.foreground": "#00000095",
+    "keybindingLabel.background": "#AAB1D3",
+    "keybindingLabel.border": "#AAB1D3",
+    "keybindingLabel.bottomBorder": "#AAB1D3",
+    "keybindingTable.headerBackground": "#AAB1D3",
+    "keybindingTable.rowsBackground": "#AAB1D3"
   },
   "tokenColors": [
     {
@@ -443,7 +444,7 @@
       "name": "String, Symbols",
       "scope": ["string"],
       "settings": {
-        "foreground": "#add570"
+        "foreground": "#70d598dd"
       }
     },
     {
@@ -621,7 +622,7 @@
       "name": "Inserted",
       "scope": ["markup.inserted"],
       "settings": {
-        "foreground": "#add570"
+        "foreground": "#70d598dd"
       }
     },
     {
@@ -657,16 +658,6 @@
       "scope": ["*url*", "*link*", "*uri*"],
       "settings": {
         "fontStyle": "underline"
-      }
-    },
-
-    {
-      "name": "JSON key",
-      "scope": [
-        "source.json meta.structure.dictionary.json support.type.property-name.json"
-      ],
-      "settings": {
-        "foreground": "#0dc9d7"
       }
     },
 
@@ -750,7 +741,7 @@
       "scope": ["markup.underline"],
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#add570"
+        "foreground": "#70d598dd"
       }
     },
     {
@@ -796,7 +787,7 @@
       "name": "Markdown - Link Anchor",
       "scope": ["constant.other.reference.link.markdown"],
       "settings": {
-        "foreground": "#add570"
+        "foreground": "#70d598dd"
       }
     },
     {
