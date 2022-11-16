@@ -1,39 +1,32 @@
 {
-  "background": "#151722",
-  "foreground": "#a9b1d6",
+  "background": "#151620",
+  "foreground": "#AAB1D3",
   "selection": "#454859a7",
   "comments": "#5f6582",
-  "keywords": "#DE5971",
-  "class": "#9D7CD8",
-  "variables": "#BB9AF7",
-  "params": "#E0AF68",
-  "types": "#FF9E64",
-  "string": "#C3E88D",
-  "punctuation": "#BA3C97",
 
-  "blueLighter": "#7DCFFF",
-  "blueLight": "#7DCFFF",
-  "blueRegular": "#7DCFFF",
-  "blueDark": "#7AA2F7",
+  "red-l": "#EF8195",
+  "red-r": "#EA5D76",
+  "red-d": "#E53858",
 
-  "greenLight": "#a7e9df",
-  "greenRegular": "#73DACA",
-  "greenDark": "#0dc9d7",
+  "blue-l": "#3ED6F4",
+  "blue-r": "#0DB5D7",
+  "blue-d": "#0A92AE",
 
-  "purpleLight": "",
-  "purpleRegular": "#BB9AF7",
-  "purpleDark": "#9D7CD8",
+  "yellow-l": "#F2DEBB",
+  "yellow-r": "#E5C07B",
+  "yellow-d": "#DDAE55",
 
-  "yellowBright": "#FFCB6B",
-  "yellowLight": "#e5ba69",
-  "yellowRegular": "#E0AF68",
-  "yellowDark": "#FF9E64",
+  "green-l": "#BED9AB",
+  "green-r": "#98C379",
+  "green-d": "#7DB356",
 
-  "redLight": "#EE7F94",
-  "redRegular": "#DE5978",
-  "redDark": "#BA3C97",
+  "purple-l": "#C6B9DF",
+  "purple-r": "#a38ecb",
+  "purple-d": "#8265B8",
 
-  "json-key": "#0DB9D7",
-
-  "keyword": "#ED6A5E"
+  "git-yellow": "#D7BB85",
+  "git-green": "#9CBC80",
+  "git-blue": "#37B0D0",
+  "git-red": "#D1697F",
+  "git-purple": "#9F92BB"
 }
