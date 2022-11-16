@@ -111,7 +111,7 @@
     "list.hoverBackground": "#00000025",
     "list.hoverForeground": "#a9b1d6",
 
-    "list.highlightForeground": "#37B0D0",
+    "list.highlightForeground": "#4869bc",
     "list.invalidItemForeground": "#D7BB85",
     "list.errorForeground": "#D1697F",
     "list.warningForeground": "#CAB287",
@@ -127,12 +127,12 @@
     "scrollbarSlider.hoverBackground": "#868bc410",
     "scrollbarSlider.activeBackground": "#868bc422",
 
-    "editorBracketHighlight.foreground1": "#0dc9d78c", //"#7AA2F7",
-    "editorBracketHighlight.foreground2": "#0dc9d7a0", //"#7DCFFF",
-    "editorBracketHighlight.foreground3": "#0dc9d7c8", //"#BB9AF7",
-    "editorBracketHighlight.foreground4": "#0dc9d7be", //"#2AC3DE",
-    "editorBracketHighlight.foreground5": "#0dc9d7d8", //"#9ECE6A",
-    "editorBracketHighlight.foreground6": "#0dc9d7f1", //"#e0af68",
+    "editorBracketHighlight.foreground1": "#0a93aee2", //"#7AA2F7",
+    "editorBracketHighlight.foreground2": "#e5c07bc7", //"#7DCFFF",
+    "editorBracketHighlight.foreground3": "#0a93aee2", //"#BB9AF7",
+    "editorBracketHighlight.foreground4": "#e5c07bc7", //"#2AC3DE",
+    "editorBracketHighlight.foreground5": "#0a93aee2", //"#9ECE6A",
+    "editorBracketHighlight.foreground6": "#e5c07bc7", //"#e0af68",
 
     "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
 
@@ -192,7 +192,7 @@
     "editorOverviewRuler.deletedForeground": "#703438",
 
     "editorRuler.foreground": "#101018",
-    "editorError.foreground": "#db4b4b",
+    "editorError.foreground": "#E53858",
     "editorWarning.foreground": "#e0af68",
     "editorInfo.foreground": "#0da0ba",
     "editorHint.foreground": "#0da0ba",
