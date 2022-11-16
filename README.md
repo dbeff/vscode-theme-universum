@@ -2,9 +2,10 @@
 
 ## Theme 
 
-![](https://github.com/dbeff/vscode-theme-universum/blob/main/resources/screenshot.png)
+![](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/screenshot.png)
+
 
 ## Colors
 
-![](https://github.com/dbeff/vscode-theme-universum/blob/main/resources/colors.png)
+![](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/colors.png)
 
