@@ -1,13 +1,14 @@
 {
   "background": "#151620",
-  "foreground": "#AABED3",
+  "foreground": "#a9c0d6",
   "selection": "#454859a7",
   "comments": "#5f6582",
 
-  "ui-accent": "#315C91",
-  "ui-foreground-dark": "#515d70",
+  "ui-accent": "#3d6fa1",
+  "ui-accent-text": "#5C8FC1",
+  "ui-foreground-dark": "#a9c0d660",
   "ui-foreground-dimmed": "#788699",
-  "ui-foreground-regular": "#a9bdd6",
+  "ui-foreground-regular": "#a9c0d6",
   "ui-foreground-active": "#c0daf5",
 
   "red-l": "#EF8195",
