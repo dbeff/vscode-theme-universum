@@ -344,7 +344,7 @@
     "debugIcon.breakpointUnverifiedForeground": "#c24242",
 
     "terminal.background": "#181A28",
-    "terminal.foreground": "#788699",
+    "terminal.foreground": "#a9c0d6",
     "terminal.selectionBackground": "#515c7e30",
 
     "terminal.ansiBlack": "#363b54",
@@ -413,7 +413,7 @@
     "menu.border": "#101018",
 
     "notificationCenterHeader.background": "#101018",
-    "notifications.background": "#101018",
+    "notifications.background": "#181825",
     "notificationLink.foreground": "#5C8FC1",
     "notificationsErrorIcon.foreground": "#D1697F",
     "notificationsWarningIcon.foreground": "#D7BB85",
