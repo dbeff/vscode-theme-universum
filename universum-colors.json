@@ -1,8 +1,14 @@
 {
   "background": "#151620",
-  "foreground": "#AAB1D3",
+  "foreground": "#AABED3",
   "selection": "#454859a7",
   "comments": "#5f6582",
+
+  "ui-accent": "#315C91",
+  "ui-foreground-dark": "#515d70",
+  "ui-foreground-dimmed": "#788699",
+  "ui-foreground-regular": "#a9bdd6",
+  "ui-foreground-active": "#c0daf5",
 
   "red-l": "#EF8195",
   "red-r": "#EA5D76",
