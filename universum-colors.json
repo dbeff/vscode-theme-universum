@@ -1,6 +1,6 @@
 {
   "background": "#151620",
-  "foreground": "#a9c0d6",
+  "foreground": "#b6c5d3",
   "selection": "#454859a7",
   "comments": "#5f6582",
 
@@ -8,8 +8,8 @@
   "ui-accent-text": "#5C8FC1",
   "ui-foreground-dark": "#a9c0d660",
   "ui-foreground-dimmed": "#788699",
-  "ui-foreground-regular": "#a9c0d6",
-  "ui-foreground-active": "#c0daf5",
+  "ui-foreground-regular": "#b6c5d3",
+  "ui-foreground-active": "#b6c5d3",
 
   "red-l": "#EF8195",
   "red-r": "#EA5D76",
