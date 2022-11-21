@@ -10,7 +10,7 @@
     "Themes"
   ],
   "scripts": {
-    "build": "ts-node ./src/index.ts",
+    "start": "ts-node-dev --respawn ./src/index.ts",
     "prerelease": "npm run build",
     "release": "vsce publish"
   },
@@ -23,17 +23,22 @@
       {
         "label": "Universum",
         "uiTheme": "vs-dark",
-        "path": "./themes/universum-theme.json"
+        "path": "./themes/universum-legacy.json"
       },
       {
-        "label": "Universum Azure",
+        "label": "Universum Blue",
         "uiTheme": "vs-dark",
-        "path": "./themes/universum-azure.json"
+        "path": "./themes/universum-blue.json"
       },
       {
-        "label": "Universum Shade",
+        "label": "Universum Gray",
         "uiTheme": "vs-dark",
-        "path": "./themes/universum-shade.json"
+        "path": "./themes/universum-gray.json"
+      },
+      {
+        "label": "Universum Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-green.json"
       }
     ]
   },
@@ -44,6 +49,7 @@
     "prettier": "^2.7.1",
     "tinycolor2": "^1.4.2",
     "ts-node": "^10.2.1",
+    "ts-node-dev": "^2.0.0",
     "vsce": "^1.100.1"
   }
 }
