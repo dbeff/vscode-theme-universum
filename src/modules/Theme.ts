@@ -388,7 +388,7 @@ export namespace Theme {
         "diffEditorOverview.removedForeground": `${settings.common.red}25`,
         "diffEditor.diagonalFill": "#292e42",
 
-        "breadcrumb.background": settings.ui.panelBackground,
+        "breadcrumb.background": settings.ui.editorBackground,
         "breadcrumbPicker.background": settings.ui.panelBackground,
         "breadcrumb.foreground": `${settings.ui.foreground}70`,
         "breadcrumb.focusForeground": settings.ui.foreground,

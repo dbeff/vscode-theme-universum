@@ -197,7 +197,7 @@
     "diffEditorOverview.insertedForeground": "#0DB5D725",
     "diffEditorOverview.removedForeground": "#EA5D7625",
     "diffEditor.diagonalFill": "#292e42",
-    "breadcrumb.background": "#181A1F",
+    "breadcrumb.background": "#1f2128",
     "breadcrumbPicker.background": "#181A1F",
     "breadcrumb.foreground": "#C6CCD770",
     "breadcrumb.focusForeground": "#C6CCD7",
