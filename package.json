@@ -1,24 +1,55 @@
 {
-  "name": "Universum",
+  "name": "universum",
   "displayName": "Universum Theme",
   "description": "Universum Theme for VS Code",
   "repository": "https://github.com/dbeff/vscode-theme-universum",
   "version": "1.0.15",
   "icon": "resources/logo.png",
   "publisher": "dbeff",
-  "engines": {
-    "vscode": "^1.73.0"
-  },
   "categories": [
     "Themes"
   ],
+  "scripts": {
+    "start": "ts-node-dev --respawn ./src/index.ts",
+    "prerelease": "npm run build",
+    "release": "vsce publish"
+  },
+  "engines": {
+    "node": ">=15.0.0",
+    "vscode": "^1.73.0"
+  },
   "contributes": {
     "themes": [
       {
         "label": "Universum",
         "uiTheme": "vs-dark",
-        "path": "./themes/universum-color-theme.json"
+        "path": "./themes/universum-legacy.json"
+      },
+      {
+        "label": "Universum Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-blue.json"
+      },
+      {
+        "label": "Universum Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-gray.json"
+      },
+      {
+        "label": "Universum Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-green.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/prettier": "^2.4.1",
+    "@types/tinycolor2": "^1.4.3",
+    "prettier": "^2.7.1",
+    "tinycolor2": "^1.4.2",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^2.0.0",
+    "vsce": "^1.100.1"
   }
 }
