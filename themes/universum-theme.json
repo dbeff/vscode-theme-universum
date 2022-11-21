@@ -88,7 +88,7 @@
 
     "activityBar.background": "#181A28",
     "activityBar.foreground": "#b6c5d3",
-    "activityBar.inactiveForeground": "#58647b",
+    "activityBar.inactiveForeground": "#b6c5d360",
     "activityBar.border": "#080a1c",
     "activityBarBadge.background": "#0A92AE",
     "activityBarBadge.foreground": "#ffffffAA",
@@ -342,7 +342,7 @@
     "debugIcon.stopForeground": "#EA5D76",
     "debugIcon.restartForeground": "#98C379",
     "debugIcon.pauseForeground": "#0DB5D7",
-    
+
     "debugIcon.breakpointForeground": "#EA5D76",
     "debugIcon.breakpointDisabledForeground": "#414761",
     "debugIcon.breakpointUnverifiedForeground": "#E53858",
