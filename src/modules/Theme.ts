@@ -35,9 +35,9 @@ export namespace Theme {
     red: "#EA5D76",
     blue: "#0DB5D7",
     yellow: "#E5C07B",
-    orange: "#ff9e64",
+    orange: "#FFB185",
     green: "#98C379",
-    purple: "#a38ecb",
+    purple: "#B09DD2",
   };
 
   export const syntaxDefault = {

@@ -76,7 +76,7 @@
     "list.hoverBackground": "#222438",
     "list.hoverForeground": "#b6c5d3",
     "list.highlightForeground": "#b6c5d3",
-    "list.invalidItemForeground": "#a38ecbDD",
+    "list.invalidItemForeground": "#B09DD2DD",
     "list.errorForeground": "#EA5D76DD",
     "list.warningForeground": "#E5C07BDD",
     "listFilterWidget.background": "#0D1117",
@@ -135,7 +135,7 @@
     "editorOverviewRuler.rangeHighlightForeground": "#b6c5d344",
     "editorOverviewRuler.selectionHighlightForeground": "#b6c5d322",
     "editorOverviewRuler.wordHighlightForeground": "#98C37950",
-    "editorOverviewRuler.wordHighlightStrongForeground": "#a38ecb60",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#B09DD260",
     "editorOverviewRuler.modifiedForeground": "#0DB5D760",
     "editorOverviewRuler.addedForeground": "#98C37960",
     "editorOverviewRuler.deletedForeground": "#EA5D7660",
@@ -259,7 +259,7 @@
     "debugView.stateLabelBackground": "#0D1117",
     "debugView.valueChangedHighlight": "#0DB5D7",
     "debugTokenExpression.name": "#0DB5D7",
-    "debugTokenExpression.value": "#a38ecb",
+    "debugTokenExpression.value": "#B09DD2",
     "debugTokenExpression.string": "#98C379",
     "debugTokenExpression.boolean": "#E5C07B",
     "debugTokenExpression.number": "#E5C07B",
@@ -278,7 +278,7 @@
     "terminal.ansiGreen": "#98C379DD",
     "terminal.ansiYellow": "#E5C07BDD",
     "terminal.ansiBlue": "#0DB5D7DD",
-    "terminal.ansiMagenta": "#a38ecbDD",
+    "terminal.ansiMagenta": "#B09DD2DD",
     "terminal.ansiCyan": "#0DB5D7DD",
     "terminal.ansiWhite": "#b6c5d3DD",
     "terminal.ansiBrightBlack": "#b6c5d310",
@@ -286,7 +286,7 @@
     "terminal.ansiBrightGreen": "#98C379",
     "terminal.ansiBrightYellow": "#E5C07B",
     "terminal.ansiBrightBlue": "#0DB5D7",
-    "terminal.ansiBrightMagenta": "#a38ecb",
+    "terminal.ansiBrightMagenta": "#B09DD2",
     "terminal.ansiBrightCyan": "#0DB5D7",
     "terminal.ansiBrightWhite": "#b6c5d3",
     "gitDecoration.addedResourceForeground": "#98C379DD",
@@ -296,7 +296,7 @@
     "gitDecoration.stageModifiedResourceForeground": "#E5C07BDD",
     "gitDecoration.deletedResourceForeground": "#EA5D76DD",
     "gitDecoration.stageDeletedResourceForeground": "#EA5D76DD",
-    "gitDecoration.conflictingResourceForeground": "#a38ecbDD",
+    "gitDecoration.conflictingResourceForeground": "#B09DD2DD",
     "gitDecoration.ignoredResourceForeground": "#b6c5d360",
     "notebook.editorBackground": "#1a1b26",
     "notebook.cellEditorBackground": "#181A28",
@@ -306,9 +306,9 @@
     "charts.red": "#EA5D76",
     "charts.blue": "#0DB5D7",
     "charts.yellow": "#E5C07B",
-    "charts.orange": "#ff9e64",
+    "charts.orange": "#FFB185",
     "charts.green": "#98C379",
-    "charts.purple": "#a38ecb",
+    "charts.purple": "#B09DD2",
     "charts.foreground": "#b6c5d3",
     "charts.lines": "#181A28",
     "merge.currentHeaderBackground": "#0DB5D725",
@@ -347,7 +347,7 @@
     "symbolIcon.arrayForeground": "#0DB5D7",
     "symbolIcon.booleanForeground": "#0DB5D7",
     "symbolIcon.classForeground": "#E5C07B",
-    "symbolIcon.namespaceForeground": "#a38ecb",
+    "symbolIcon.namespaceForeground": "#B09DD2",
     "symbolIcon.moduleForeground": "#0DB5D7",
     "symbolIcon.colorForeground": "#0DB5D7",
     "symbolIcon.constantForeground": "#98C379",
@@ -616,21 +616,21 @@
       "name": "Changed",
       "scope": ["markup.changed"],
       "settings": {
-        "foreground": "#a38ecb"
+        "foreground": "#B09DD2"
       }
     },
     {
       "name": "Regular Expressions",
       "scope": ["string.regexp"],
       "settings": {
-        "foreground": "#a38ecb"
+        "foreground": "#B09DD2"
       }
     },
     {
       "name": "Escape Characters",
       "scope": ["constant.character.escape"],
       "settings": {
-        "foreground": "#a38ecb"
+        "foreground": "#B09DD2"
       }
     },
     {
@@ -672,7 +672,7 @@
       "name": "Markdown - Markup Raw Inline",
       "scope": ["text.html.markdown markup.inline.raw.markdown"],
       "settings": {
-        "foreground": "#a38ecb"
+        "foreground": "#B09DD2"
       }
     },
     {
@@ -773,7 +773,7 @@
       "name": "Markup - Raw Block",
       "scope": ["markup.raw.block"],
       "settings": {
-        "foreground": "#a38ecb"
+        "foreground": "#B09DD2"
       }
     },
     {
