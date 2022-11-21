@@ -518,21 +518,21 @@
       "name": "Tag Name",
       "scope": ["meta.tag entity.name.tag"],
       "settings": {
-        "foreground": "#19dee5"
+        "foreground": "#26cef0"
       }
     },
     {
       "name": "Tag Markup",
       "scope": ["meta.tag punctuation.definition.tag"],
       "settings": {
-        "foreground": "#00C5CCBB"
+        "foreground": "#0DB5D7BB"
       }
     },
     {
       "name": "Tag attributes",
       "scope": ["meta.tag.attributes", "meta.attribute"],
       "settings": {
-        "foreground": "#00C5CCCC"
+        "foreground": "#0DB5D7CC"
       }
     },
     {

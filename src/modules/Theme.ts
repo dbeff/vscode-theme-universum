@@ -45,7 +45,7 @@ export namespace Theme {
     storage: "#0DB5D7",
     string: "#98C379",
     attributes: "#E5C07B",
-    tags: "#00C5CC",
+    tags: "#0DB5D7",
   };
 
   export function prettify(object: unknown) {
