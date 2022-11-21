@@ -23,12 +23,17 @@
       {
         "label": "Universum",
         "uiTheme": "vs-dark",
-        "path": "./themes/universum-blue.json"
+        "path": "./themes/universum-main.json"
       },
       {
         "label": "Universum Gray",
         "uiTheme": "vs-dark",
         "path": "./themes/universum-gray.json"
+      },
+      {
+        "label": "Universum Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-blue.json"
       },
       {
         "label": "Universum Green",

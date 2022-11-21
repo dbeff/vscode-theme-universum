@@ -77,13 +77,24 @@ export namespace Theme {
         "sash.hoverBorder": settings.ui.accent,
 
         "settings.headerForeground": settings.ui.foreground,
+        "settings.headerBorder": settings.ui.border,
         "settings.modifiedItemIndicator": `${settings.ui.accent}`,
+        "settings.rowHoverBackground": tinycolor(settings.ui.editorBackground)
+          .lighten(3)
+          .toHexString(),
+        "settings.focusedRowBackground": tinycolor(settings.ui.editorBackground)
+          .lighten(5)
+          .toHexString(),
 
-        "badge.background": settings.ui.editorBackground,
+        "badge.background": `${settings.ui.accent}A0`,
         "badge.foreground": settings.ui.foreground,
 
-        "toolbar.activeBackground": "#202330",
-        "toolbar.hoverBackground": "#202330",
+        "toolbar.activeBackground": tinycolor(settings.ui.panelBackground)
+          .lighten(10)
+          .toHexString(),
+        "toolbar.hoverBackground": tinycolor(settings.ui.panelBackground)
+          .lighten(10)
+          .toHexString(),
 
         "extensionButton.prominentBackground": `${settings.ui.accent}DD`,
         "extensionButton.prominentHoverBackground": `${settings.ui.accent}AA`,
@@ -102,7 +113,11 @@ export namespace Theme {
         "input.foreground": settings.ui.foreground,
         "input.border": settings.ui.border,
         "input.placeholderForeground": `${settings.ui.foreground}80`,
+
         "inputOption.activeForeground": settings.ui.foreground,
+        "inputOption.hoverBackground:": tinycolor(settings.ui.panelBackground)
+          .lighten(10)
+          .toHexString(),
         "inputOption.activeBackground": tinycolor(settings.ui.panelBackground)
           .lighten(10)
           .toHexString(),
@@ -199,8 +214,14 @@ export namespace Theme {
         "editor.foldBackground": "#11111750",
         "editorLink.activeForeground": settings.ui.accent,
 
-        "editor.selectionBackground": "#ffffff10",
-        "editor.inactiveSelectionBackground": "#515c7e25",
+        "editor.selectionBackground": tinycolor(settings.ui.editorBackground)
+          .lighten(7)
+          .toHexString(),
+        "editor.inactiveSelectionBackground": tinycolor(
+          settings.ui.editorBackground
+        )
+          .lighten(3)
+          .toHexString(),
 
         "editor.findMatchBackground": tinycolor(settings.common.yellow)
           .setAlpha(0.2)
@@ -535,14 +556,16 @@ export namespace Theme {
           settings.common.yellow,
 
         "menubar.selectionForeground": settings.ui.foreground,
-        "menubar.selectionBackground": "#1e202e",
-        "menubar.selectionBorder": "#1b1e2e",
+        "menubar.selectionBackground": settings.ui.panelBackground,
+        "menubar.selectionBorder": settings.ui.panelBackground,
         "menu.foreground": tinycolor(settings.ui.foreground)
           .setAlpha(0.5)
           .toHex8String(),
         "menu.background": settings.ui.panelBackground,
         "menu.selectionForeground": settings.ui.foreground,
-        "menu.selectionBackground": "#1e202e",
+        "menu.selectionBackground": tinycolor(settings.ui.editorBackground)
+          .lighten(10)
+          .toHexString(),
         "menu.separatorBackground": settings.ui.border,
         "menu.border": settings.ui.border,
 
@@ -623,7 +646,7 @@ export namespace Theme {
           name: "String, Symbols",
           scope: ["string"],
           settings: {
-            foreground: "#98C379",
+            foreground: settings.syntax.string,
           },
         },
         {
