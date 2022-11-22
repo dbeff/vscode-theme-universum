@@ -8,6 +8,8 @@ export namespace Theme {
     string: string;
     attributes: string;
     tags: string;
+    arguments: string;
+    special: string;
   }
 
   export interface Common {
@@ -17,6 +19,7 @@ export namespace Theme {
     orange: string;
     blue: string;
     purple: string;
+    pink: string;
   }
 
   export interface Settings {
@@ -31,21 +34,24 @@ export namespace Theme {
     common: Common;
   }
 
-  export const commonDefault = {
+  export const commonDefault: Common = {
     red: "#EA5D76",
     blue: "#0DB5D7",
     yellow: "#E5C07B",
-    orange: "#FFB185",
+    orange: "#E67E6F",
     green: "#98C379",
     purple: "#B09DD2",
+    pink: "#F1A2CA",
   };
 
-  export const syntaxDefault = {
+  export const syntaxDefault: Syntax = {
     keywords: "#EA5D76",
     storage: "#0DB5D7",
     string: "#98C379",
     attributes: "#E5C07B",
+    arguments: tinycolor("#E5C07B").lighten(10).toHex8String(),
     tags: "#0DB5D7",
+    special: "#B09DD2",
   };
 
   export function prettify(object: unknown) {
@@ -212,7 +218,9 @@ export namespace Theme {
         "editor.background": settings.ui.editorBackground,
         "editor.foreground": settings.ui.foreground,
         "editor.foldBackground": "#11111750",
-        "editorLink.activeForeground": settings.ui.accent,
+        "editorLink.activeForeground": tinycolor(settings.ui.accent)
+          .lighten(10)
+          .toHexString(),
 
         "editor.selectionBackground": tinycolor(settings.ui.editorBackground)
           .lighten(7)
@@ -626,6 +634,28 @@ export namespace Theme {
           },
         },
         {
+          name: "Regular Expressions",
+          scope: ["string.regexp"],
+          settings: {
+            foreground: settings.syntax.special,
+          },
+        },
+        {
+          name: "Escape Characters",
+          scope: ["constant.character.escape"],
+          settings: {
+            foreground: settings.syntax.special,
+          },
+        },
+        {
+          name: "URL",
+          scope: ["*url*", "*link*", "*uri*"],
+          settings: {
+            fontStyle: "underline",
+            foreground: settings.common.blue,
+          },
+        },
+        {
           name: "Comment",
           scope: ["comment", "punctuation.definition.comment"],
           settings: {
@@ -637,25 +667,30 @@ export namespace Theme {
           name: "Number, Constant",
           scope: ["constant.numeric", "constant.character", "constant.escape"],
           settings: {
-            foreground: tinycolor(settings.syntax.keywords)
-              .lighten(10)
-              .toHexString(),
+            foreground: tinycolor(settings.syntax.storage).toHexString(),
           },
         },
         {
-          name: "String, Symbols",
+          name: "String",
           scope: ["string"],
           settings: {
             foreground: settings.syntax.string,
           },
         },
         {
-          name: "Punctuation",
-          scope: ["punctuation", "meta.brace"],
+          name: "String - Punctuation",
+          scope: ["string punctuation"],
           settings: {
-            foreground: tinycolor(settings.syntax.storage)
-              .setAlpha(0.8)
-              .toHex8String(),
+            foreground: tinycolor(settings.syntax.string)
+              .lighten(15)
+              .toHexString(),
+          },
+        },
+        {
+          name: "Punctuation",
+          scope: ["punctuation"],
+          settings: {
+            foreground: `${settings.ui.foreground}DD`,
           },
         },
         {
@@ -674,12 +709,10 @@ export namespace Theme {
         },
 
         {
-          name: "Keyword Operator",
+          name: "Keyword - Operator",
           scope: ["keyword.operator"],
           settings: {
-            foreground: tinycolor(settings.syntax.keywords)
-              .setAlpha(0.8)
-              .toHex8String(),
+            foreground: settings.syntax.keywords,
           },
         },
         {
@@ -699,30 +732,29 @@ export namespace Theme {
           },
         },
         {
-          name: "Object",
-          scope: ["meta.object"],
-          settings: {
-            foreground: settings.ui.foreground,
-          },
-        },
-        {
-          name: "Variables",
-          scope: ["variable", "variable.other.enummember"],
-          settings: {
-            foreground: settings.ui.foreground,
-          },
-        },
-        {
-          name: "Variables Other",
+          name: "Variables, Objects",
           scope: [
-            "variable.other",
-            "meta.parameters variable",
-            "variable.parameter",
+            "variable",
+            "meta.object",
+            "variable.other.property",
+            "variable.other.enummember",
           ],
           settings: {
-            foreground: tinycolor(settings.syntax.attributes)
-              .lighten(10)
-              .toHex8String(),
+            foreground: settings.ui.foreground,
+          },
+        },
+        {
+          name: "Variables - Others",
+          scope: ["variable.other"],
+          settings: {
+            foreground: settings.syntax.attributes,
+          },
+        },
+        {
+          name: "Variables - Arguments",
+          scope: ["meta.parameters variable", "variable.parameter"],
+          settings: {
+            foreground: settings.syntax.arguments,
           },
         },
         {
@@ -734,9 +766,14 @@ export namespace Theme {
             "support.function",
           ],
           settings: {
-            foreground: tinycolor(settings.syntax.attributes)
-              .lighten(10)
-              .toHex8String(),
+            foreground: settings.syntax.attributes,
+          },
+        },
+        {
+          name: "Method - Builtin",
+          scope: ["support.function.builtin"],
+          settings: {
+            foreground: settings.syntax.storage,
           },
         },
         {
@@ -754,12 +791,11 @@ export namespace Theme {
           },
         },
         {
-          name: "Type, Enum, Interface",
+          name: "Type",
           scope: [
             "meta.type",
             "meta.interface",
             "meta.enum",
-            "support.type",
             "entity.name.type",
           ],
           settings: {
@@ -767,7 +803,7 @@ export namespace Theme {
           },
         },
         {
-          name: "Tag Name",
+          name: "Tag - Name",
           scope: ["meta.tag entity.name.tag"],
           settings: {
             foreground: tinycolor(settings.syntax.tags)
@@ -776,56 +812,35 @@ export namespace Theme {
           },
         },
         {
-          name: "Tag Markup",
+          name: "Tag - Markup",
           scope: ["meta.tag punctuation.definition.tag"],
           settings: {
             foreground: `${settings.syntax.tags}BB`,
           },
         },
         {
-          name: "Tag attributes",
+          name: "Tag - attributes",
           scope: ["meta.tag.attributes", "meta.attribute"],
           settings: {
             foreground: `${settings.syntax.tags}CC`,
           },
         },
         {
-          name: "Tag expression",
+          name: "Tag - expression",
           scope: ["meta.tag.attributes meta.embedded.expression"],
           settings: {
             foreground: settings.syntax.attributes,
           },
         },
         {
-          name: "YML",
-          scope: ["entity.name.tag.yaml"],
-          settings: {
-            foreground: settings.syntax.attributes,
-          },
-        },
-        {
-          name: "YML unquoted",
-          scope: ["string.unquoted.plain.out.yaml", "source.yaml punctuation"],
-          settings: {
-            foreground: settings.ui.foreground,
-          },
-        },
-        {
-          name: "JSON property",
-          scope: ["support.type.property-name.json"],
-          settings: {
-            foreground: settings.syntax.attributes,
-          },
-        },
-        {
-          name: "CSS Classes",
+          name: "CSS - Classes",
           scope: ["entity.other.attribute-name.class"],
           settings: {
             foreground: settings.syntax.attributes,
           },
         },
         {
-          name: "CSS Properties",
+          name: "CSS - Properties",
           scope: [
             "source.css support.type.property-name",
             "source.sass support.type.property-name",
@@ -841,17 +856,45 @@ export namespace Theme {
           },
         },
         {
-          name: "CSS ID",
+          name: "CSS- ID",
           scope: ["meta.selector"],
           settings: {
             foreground: settings.syntax.attributes,
           },
         },
         {
-          name: "CSS Value",
+          name: "CSS - Value",
           scope: ["meta.property-value.css"],
           settings: {
             foreground: settings.syntax.storage,
+          },
+        },
+        {
+          name: "YML",
+          scope: ["entity.name.tag.yaml"],
+          settings: {
+            foreground: settings.syntax.attributes,
+          },
+        },
+        {
+          name: "YML - unquoted",
+          scope: ["string.unquoted.plain.out.yaml", "source.yaml punctuation"],
+          settings: {
+            foreground: settings.ui.foreground,
+          },
+        },
+        {
+          name: "JSON - property",
+          scope: ["support.type.property-name.json"],
+          settings: {
+            foreground: settings.syntax.string,
+          },
+        },
+        {
+          name: "Shell - Modifier",
+          scope: ["storage.modifier.shell"],
+          settings: {
+            foreground: settings.syntax.keywords,
           },
         },
         {
@@ -872,29 +915,7 @@ export namespace Theme {
           name: "Changed",
           scope: ["markup.changed"],
           settings: {
-            foreground: settings.common.purple,
-          },
-        },
-        {
-          name: "Regular Expressions",
-          scope: ["string.regexp"],
-          settings: {
-            foreground: settings.common.purple,
-          },
-        },
-        {
-          name: "Escape Characters",
-          scope: ["constant.character.escape"],
-          settings: {
-            foreground: settings.common.purple,
-          },
-        },
-        {
-          name: "URL",
-          scope: ["*url*", "*link*", "*uri*"],
-          settings: {
-            fontStyle: "underline",
-            foreground: settings.common.blue,
+            foreground: settings.syntax.special,
           },
         },
 
@@ -912,9 +933,7 @@ export namespace Theme {
           name: "Markdown heading",
           scope: ["markup.heading.markdown"],
           settings: {
-            foreground: tinycolor(settings.common.blue)
-              .lighten(20)
-              .toHexString(),
+            foreground: settings.syntax.attributes,
           },
         },
         {
@@ -924,14 +943,14 @@ export namespace Theme {
             "markup.heading.markdown punctuation.definition.heading.markdown",
           ],
           settings: {
-            foreground: `${settings.common.blue}AA`,
+            foreground: settings.syntax.storage,
           },
         },
         {
           name: "Markdown - Markup Raw Inline",
           scope: ["text.html.markdown markup.inline.raw.markdown"],
           settings: {
-            foreground: settings.common.purple,
+            foreground: settings.syntax.special,
           },
         },
         {
@@ -949,7 +968,7 @@ export namespace Theme {
           scope: ["markup.italic"],
           settings: {
             fontStyle: "italic",
-            foreground: settings.common.yellow,
+            foreground: settings.syntax.keywords,
           },
         },
         {
@@ -957,7 +976,7 @@ export namespace Theme {
           scope: ["markup.bold", "markup.bold string"],
           settings: {
             fontStyle: "bold",
-            foreground: settings.common.yellow,
+            foreground: settings.syntax.keywords,
           },
         },
         {
@@ -972,7 +991,7 @@ export namespace Theme {
           ],
           settings: {
             fontStyle: "bold",
-            foreground: settings.common.yellow,
+            foreground: settings.syntax.attributes,
           },
         },
         {
@@ -980,7 +999,7 @@ export namespace Theme {
           scope: ["markup.underline"],
           settings: {
             fontStyle: "underline",
-            foreground: settings.common.green,
+            foreground: settings.syntax.string,
           },
         },
         {
@@ -995,7 +1014,7 @@ export namespace Theme {
           scope: ["markup.quote"],
           settings: {
             fontStyle: "italic",
-            foreground: settings.common.blue,
+            foreground: settings.syntax.storage,
           },
         },
         {
@@ -1005,35 +1024,35 @@ export namespace Theme {
             "string.other.link.description.markdown",
           ],
           settings: {
-            foreground: settings.common.yellow,
+            foreground: settings.syntax.special,
           },
         },
         {
           name: "Markdown - Link",
           scope: ["string.other.link.title.markdown"],
           settings: {
-            foreground: settings.common.yellow,
+            foreground: settings.syntax.special,
           },
         },
         {
           name: "Markdown - Link Description",
           scope: ["string.other.link.description.title.markdown"],
           settings: {
-            foreground: settings.common.blue,
+            foreground: settings.syntax.storage,
           },
         },
         {
           name: "Markdown - Link Anchor",
           scope: ["constant.other.reference.link.markdown"],
           settings: {
-            foreground: settings.common.green,
+            foreground: settings.syntax.string,
           },
         },
         {
           name: "Markup - Raw Block",
           scope: ["markup.raw.block"],
           settings: {
-            foreground: settings.common.purple,
+            foreground: settings.syntax.special,
           },
         },
         {
