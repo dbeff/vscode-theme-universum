@@ -344,19 +344,15 @@ export namespace Theme {
         "editorInlayHint.background": tinycolor(settings.ui.editorBackground)
           .lighten(10)
           .toHexString(),
-        "editorInlayHint.foreground": tinycolor(settings.ui.editorBackground)
-          .lighten(10)
-          .toHexString(),
-        "editorInlayHint.typeForeground": tinycolor(
-          settings.ui.editorBackground
-        )
-          .lighten(60)
-          .toHexString(),
-        "editorInlayHint.parameterForeground": tinycolor(
-          settings.ui.editorBackground
-        )
-          .lighten(60)
-          .toHexString(),
+        "editorInlayHint.foreground": tinycolor(settings.ui.foreground)
+          .setAlpha(0.5)
+          .toHex8String(),
+        "editorInlayHint.typeForeground": tinycolor(settings.ui.foreground)
+          .setAlpha(0.5)
+          .toHex8String(),
+        "editorInlayHint.parameterForeground": tinycolor(settings.ui.foreground)
+          .setAlpha(0.5)
+          .toHex8String(),
 
         "editorGutter.modifiedBackground": `${settings.common.blue}AA`,
         "editorGutter.addedBackground": `${settings.common.green}AA`,
