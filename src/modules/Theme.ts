@@ -61,8 +61,8 @@ export namespace Theme {
       type: "dark",
       colors: {
         foreground: settings.ui.foreground,
-        "selection.background": tinycolor(settings.ui.foreground)
-          .setAlpha(0.8)
+        "selection.background": tinycolor(settings.ui.panelBackground)
+          .lighten(10)
           .toHexString(),
         descriptionForeground: `${settings.ui.foreground}60`,
         focusBorder: "#ffffff00",

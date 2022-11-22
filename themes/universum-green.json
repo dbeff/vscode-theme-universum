@@ -4,7 +4,7 @@
   "type": "dark",
   "colors": {
     "foreground": "#C6CCD7",
-    "selection.background": "#c6ccd7",
+    "selection.background": "#0a3c4d",
     "descriptionForeground": "#C6CCD760",
     "focusBorder": "#ffffff00",
     "errorForeground": "#C6CCD760",
