@@ -457,7 +457,7 @@
     },
     {
       "name": "Keyword",
-      "scope": ["keyword", "support.type.object.module"],
+      "scope": ["keyword", "support.type.object.module", "variable.language"],
       "settings": {
         "foreground": "#EA5D76"
       }
@@ -631,6 +631,20 @@
       "scope": ["support.type.property-name.json"],
       "settings": {
         "foreground": "#98C379"
+      }
+    },
+    {
+      "name": "INI - Group title",
+      "scope": ["entity.name.section.group-title.ini"],
+      "settings": {
+        "foreground": "#0DB5D7"
+      }
+    },
+    {
+      "name": "INI - Definition",
+      "scope": ["keyword.other.definition.ini"],
+      "settings": {
+        "foreground": "#E5C07B"
       }
     },
     {

@@ -708,7 +708,7 @@ export namespace Theme {
         },
         {
           name: "Keyword",
-          scope: ["keyword", "support.type.object.module"],
+          scope: ["keyword", "support.type.object.module", "variable.language"],
           settings: {
             foreground: settings.syntax.keywords,
           },
@@ -894,6 +894,20 @@ export namespace Theme {
           scope: ["support.type.property-name.json"],
           settings: {
             foreground: settings.syntax.string,
+          },
+        },
+        {
+          name: "INI - Group title",
+          scope: ["entity.name.section.group-title.ini"],
+          settings: {
+            foreground: settings.syntax.storage,
+          },
+        },
+        {
+          name: "INI - Definition",
+          scope: ["keyword.other.definition.ini"],
+          settings: {
+            foreground: settings.syntax.attributes,
           },
         },
         {
