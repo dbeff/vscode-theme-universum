@@ -42,16 +42,16 @@
     "inputOption.hoverBackground:": "#2b3347",
     "inputOption.activeBackground": "#2b3347",
     "inputValidation.infoForeground": "#b6c5d3",
-    "inputValidation.infoBackground": "#0DB5D750",
-    "inputValidation.infoBorder": "#0DB5D7AA",
+    "inputValidation.infoBackground": "#000000",
+    "inputValidation.infoBorder": "#0DB5D7",
     "inputValidation.warningForeground": "#b6c5d3",
-    "inputValidation.warningBackground": "#E5C07B50",
-    "inputValidation.warningBorder": "#E5C07BAA",
+    "inputValidation.warningBackground": "#513a10",
+    "inputValidation.warningBorder": "#E5C07B",
     "inputValidation.errorForeground": "#b6c5d3",
-    "inputValidation.errorBackground": "#EA5D7650",
-    "inputValidation.errorBorder": "#EA5D76AA",
+    "inputValidation.errorBackground": "#400812",
+    "inputValidation.errorBorder": "#EA5D76",
     "dropdown.foreground": "#b6c5d390",
-    "dropdown.background": "#00000030",
+    "dropdown.background": "#181C27",
     "dropdown.listBackground": "#181C27",
     "dropdown.border": "#12151e",
     "activityBar.background": "#1c212d",
@@ -457,7 +457,7 @@
     },
     {
       "name": "Keyword",
-      "scope": ["keyword"],
+      "scope": ["keyword", "support.type.object.module"],
       "settings": {
         "foreground": "#EA5D76"
       }

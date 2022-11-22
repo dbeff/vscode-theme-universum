@@ -129,17 +129,23 @@ export namespace Theme {
           .toHexString(),
 
         "inputValidation.infoForeground": settings.ui.foreground,
-        "inputValidation.infoBackground": `${settings.common.blue}50`,
-        "inputValidation.infoBorder": `${settings.common.blue}AA`,
+        "inputValidation.infoBackground": tinycolor(settings.common.blue)
+          .darken(50)
+          .toString(),
+        "inputValidation.infoBorder": settings.common.blue,
         "inputValidation.warningForeground": settings.ui.foreground,
-        "inputValidation.warningBackground": `${settings.common.yellow}50`,
-        "inputValidation.warningBorder": `${settings.common.yellow}AA`,
+        "inputValidation.warningBackground": tinycolor(settings.common.yellow)
+          .darken(50)
+          .toString(),
+        "inputValidation.warningBorder": settings.common.yellow,
         "inputValidation.errorForeground": settings.ui.foreground,
-        "inputValidation.errorBackground": `${settings.common.red}50`,
-        "inputValidation.errorBorder": `${settings.common.red}AA`,
+        "inputValidation.errorBackground": tinycolor(settings.common.red)
+          .darken(50)
+          .toString(),
+        "inputValidation.errorBorder": settings.common.red,
 
         "dropdown.foreground": `${settings.ui.foreground}90`,
-        "dropdown.background": "#00000030",
+        "dropdown.background": settings.ui.panelBackground,
         "dropdown.listBackground": settings.ui.panelBackground,
         "dropdown.border": settings.ui.border,
 
@@ -702,7 +708,7 @@ export namespace Theme {
         },
         {
           name: "Keyword",
-          scope: ["keyword"],
+          scope: ["keyword", "support.type.object.module"],
           settings: {
             foreground: settings.syntax.keywords,
           },
