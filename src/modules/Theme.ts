@@ -40,7 +40,7 @@ export namespace Theme {
     yellow: "#E5C07B",
     orange: "#E67E6F",
     green: "#98C379",
-    purple: "#B09DD2",
+    purple: "#A08EC6",
     pink: "#F1A2CA",
   };
 
@@ -51,7 +51,7 @@ export namespace Theme {
     attributes: "#E5C07B",
     arguments: tinycolor("#E5C07B").lighten(10).toHex8String(),
     tags: "#0DB5D7",
-    special: "#B09DD2",
+    special: "#A08EC6",
   };
 
   export function prettify(object: unknown) {
@@ -61,6 +61,10 @@ export namespace Theme {
   }
 
   export function getSchema(settings: Theme.Settings): unknown {
+    const accentForeground = tinycolor(settings.ui.accent)
+      .lighten(50)
+      .toString();
+
     return {
       $schema: "vscode://schemas/color-theme",
       name: "Universum",
@@ -73,13 +77,13 @@ export namespace Theme {
         descriptionForeground: `${settings.ui.foreground}60`,
         focusBorder: "#ffffff00",
         errorForeground: `${settings.ui.foreground}60`,
-        "widget.shadow": "#00000070",
-        "scrollbar.shadow": "#00000033",
+        "widget.shadow": `${settings.ui.border}DD`,
+        "scrollbar.shadow": `${settings.ui.border}30`,
         "icon.foreground": tinycolor(settings.ui.foreground)
           .setAlpha(0.5)
           .toHex8String(),
         "window.activeBorder": settings.ui.border,
-        "window.inactiveBorder": "#ffffff00",
+        "window.inactiveBorder": settings.ui.border,
         "sash.hoverBorder": settings.ui.accent,
 
         "settings.headerForeground": settings.ui.foreground,
@@ -93,7 +97,7 @@ export namespace Theme {
           .toHexString(),
 
         "badge.background": `${settings.ui.accent}A0`,
-        "badge.foreground": settings.ui.foreground,
+        "badge.foreground": accentForeground,
 
         "toolbar.activeBackground": tinycolor(settings.ui.panelBackground)
           .lighten(10)
@@ -104,15 +108,15 @@ export namespace Theme {
 
         "extensionButton.prominentBackground": `${settings.ui.accent}DD`,
         "extensionButton.prominentHoverBackground": `${settings.ui.accent}AA`,
-        "extensionButton.prominentForeground": "#ffffff",
+        "extensionButton.prominentForeground": accentForeground,
         "extensionBadge.remoteBackground": `${settings.ui.accent}`,
-        "extensionBadge.remoteForeground": "#ffffff",
+        "extensionBadge.remoteForeground": accentForeground,
         "extensionIcon.starForeground": settings.common.yellow,
 
         "button.background": `${settings.ui.accent}`,
         "button.hoverBackground": `${settings.ui.accent}BB`,
         "button.secondaryBackground": `${settings.ui.accent}`,
-        "button.foreground": "#ffffffCC",
+        "button.foreground": accentForeground,
         "progressBar.background": `${settings.ui.accent}`,
 
         "input.background": settings.ui.panelBackground,
@@ -149,12 +153,14 @@ export namespace Theme {
         "dropdown.listBackground": settings.ui.panelBackground,
         "dropdown.border": settings.ui.border,
 
+        "activityBar.dropBorder": settings.ui.accent,
+        "activityBar.border": settings.ui.border,
         "activityBar.background": settings.ui.editorBackground,
         "activityBar.foreground": settings.ui.foreground,
         "activityBar.inactiveForeground": `${settings.ui.foreground}60`,
-        "activityBar.border": settings.ui.border,
+        "activityBar.activeBorder": settings.ui.accent,
         "activityBarBadge.background": `${settings.ui.accent}`,
-        "activityBarBadge.foreground": "#ffffffBB",
+        "activityBarBadge.foreground": accentForeground,
 
         "tree.indentGuidesStroke": tinycolor(settings.ui.panelBackground)
           .lighten(15)
@@ -201,9 +207,23 @@ export namespace Theme {
         "pickerGroup.foreground": settings.ui.foreground,
         "pickerGroup.border": settings.ui.border,
 
-        "scrollbarSlider.background": `${settings.ui.foreground}15`,
-        "scrollbarSlider.hoverBackground": `${settings.ui.foreground}25`,
-        "scrollbarSlider.activeBackground": `${settings.ui.foreground}25`,
+        "scrollbarSlider.background": tinycolor(settings.ui.panelBackground)
+          .lighten(20)
+          .setAlpha(0.4)
+          .toHex8String(),
+
+        "scrollbarSlider.hoverBackground": tinycolor(
+          settings.ui.panelBackground
+        )
+          .lighten(25)
+          .setAlpha(0.4)
+          .toHex8String(),
+        "scrollbarSlider.activeBackground": tinycolor(
+          settings.ui.panelBackground
+        )
+          .lighten(30)
+          .setAlpha(0.4)
+          .toHex8String(),
 
         "editorBracketHighlight.foreground1": `${settings.syntax.storage}CC`,
         "editorBracketHighlight.foreground2": `${settings.syntax.attributes}CC`,
@@ -353,17 +373,18 @@ export namespace Theme {
 
         "editorPane.background": settings.ui.panelBackground,
 
+        "editorWidget.border": settings.ui.border,
         "editorWidget.background": settings.ui.panelBackground,
         "editorWidget.resizeBorder": settings.ui.accent,
 
         "editorSuggestWidget.background": settings.ui.panelBackground,
         "editorSuggestWidget.border": settings.ui.border,
+        "editorSuggestWidget.highlightForeground": settings.ui.accent,
         "editorSuggestWidget.selectedBackground": tinycolor(
           settings.ui.panelBackground
         )
           .lighten(10)
           .toHexString(),
-        "editorSuggestWidget.highlightForeground": settings.ui.accent,
 
         "editorCodeLens.foreground": `${settings.ui.foreground}AA`,
         "editorLightBulb.foreground": settings.common.yellow,
@@ -431,8 +452,12 @@ export namespace Theme {
         "panelTitle.activeForeground": settings.ui.foreground,
         "panelTitle.inactiveForeground": `${settings.ui.foreground}70`,
         "panelInput.border": settings.ui.border,
-        "panelSectionHeader.background": "#00000030",
+
         "panelSectionHeader.border": settings.ui.border,
+        "panelSectionHeader.background": tinycolor(settings.ui.panelBackground)
+          .darken(3)
+          .toString(),
+        "panelSectionHeader.foreground": settings.ui.foreground,
 
         "statusBar.foreground": `${settings.ui.foreground}AA`,
         "statusBar.background": settings.ui.editorBackground,
@@ -466,11 +491,14 @@ export namespace Theme {
         "textPreformat.foreground": settings.ui.accent,
         "textBlockQuote.background": settings.ui.panelBackground,
         "textCodeBlock.background": settings.ui.panelBackground,
-        "textSeparator.foreground": `${settings.ui.foreground}60`,
+        "textSeparator.foreground": `${settings.ui.panelBackground}60`,
 
         "debugExceptionWidget.border": settings.common.red,
         "debugExceptionWidget.background": settings.ui.border,
-        "debugToolBar.background": settings.ui.border,
+        "debugToolBar.border": settings.ui.border,
+        "debugToolBar.background": tinycolor(settings.ui.panelBackground)
+          .darken(3)
+          .toString(),
 
         "debugConsole.sourceForeground": tinycolor(settings.ui.foreground)
           .setAlpha(0.5)
@@ -488,11 +516,11 @@ export namespace Theme {
 
         "editor.stackFrameHighlightBackground": "#E2BD3A20",
         "editor.focusedStackFrameHighlightBackground": "#73daca20",
-        "debugView.stateLabelForeground": tinycolor(settings.ui.foreground)
-          .setAlpha(0.5)
-          .toHex8String(),
-        "debugView.stateLabelBackground": settings.ui.border,
+
+        "debugView.stateLabelForeground": accentForeground,
+        "debugView.stateLabelBackground": settings.ui.accent,
         "debugView.valueChangedHighlight": settings.common.blue,
+
         "debugTokenExpression.name": settings.common.blue,
         "debugTokenExpression.value": settings.common.purple,
         "debugTokenExpression.string": settings.common.green,
@@ -584,7 +612,10 @@ export namespace Theme {
         "menu.border": settings.ui.border,
 
         "notificationCenterHeader.background": settings.ui.border,
-        "notifications.background": "#181825",
+        "notificationCenterHeader.border": settings.ui.border,
+        "notificationToast.border": settings.ui.border,
+        "notifications.border": settings.ui.border,
+        "notifications.background": settings.ui.panelBackground,
         "notificationLink.foreground": settings.common.blue,
         "notificationsErrorIcon.foreground": settings.common.red,
         "notificationsWarningIcon.foreground": settings.common.yellow,
