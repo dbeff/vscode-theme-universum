@@ -61,9 +61,17 @@ export namespace Theme {
   }
 
   export function getSchema(settings: Theme.Settings): unknown {
-    const accentForeground = tinycolor(settings.ui.accent)
+    const accentForeground = tinycolor(settings.common.yellow)
       .lighten(50)
       .toString();
+
+    const findMatchBackground = tinycolor(settings.common.yellow)
+      .setAlpha(0.2)
+      .toHex8String();
+
+    const findMatchBorder = tinycolor(settings.common.yellow)
+      .setAlpha(0.8)
+      .toHexString();
 
     return {
       $schema: "vscode://schemas/color-theme",
@@ -86,9 +94,12 @@ export namespace Theme {
         "window.inactiveBorder": settings.ui.border,
         "sash.hoverBorder": settings.ui.accent,
 
+        "searchEditor.findMatchBorder": findMatchBorder,
+        "searchEditor.textInputBorder": settings.ui.border,
+
         "settings.headerForeground": settings.ui.foreground,
         "settings.headerBorder": settings.ui.border,
-        "settings.modifiedItemIndicator": `${settings.ui.accent}`,
+        "settings.modifiedItemIndicator": settings.ui.accent,
         "settings.rowHoverBackground": tinycolor(settings.ui.editorBackground)
           .lighten(3)
           .toHexString(),
@@ -202,7 +213,7 @@ export namespace Theme {
 
         "listFilterWidget.background": settings.ui.border,
         "listFilterWidget.outline": settings.common.blue,
-        "listFilterWidget.noMatchesOutline": `${settings.common.red}`,
+        "listFilterWidget.noMatchesOutline": settings.common.red,
 
         "pickerGroup.foreground": settings.ui.foreground,
         "pickerGroup.border": settings.ui.border,
@@ -257,15 +268,9 @@ export namespace Theme {
           .lighten(3)
           .toHexString(),
 
-        "editor.findMatchBackground": tinycolor(settings.common.yellow)
-          .setAlpha(0.2)
-          .toHex8String(),
-        "editor.findMatchBorder": tinycolor(settings.common.yellow)
-          .lighten(15)
-          .toHexString(),
-        "editor.findMatchHighlightBackground": tinycolor(settings.common.yellow)
-          .setAlpha(0.2)
-          .toHex8String(),
+        "editor.findMatchBackground": findMatchBackground,
+        "editor.findMatchBorder": findMatchBorder,
+        "editor.findMatchHighlightBackground": findMatchBackground,
 
         "editor.findRangeHighlightBackground": tinycolor(
           settings.ui.editorBackground
@@ -514,8 +519,8 @@ export namespace Theme {
           .toHexString(),
         "debugConsoleInputIcon.foreground": settings.ui.foreground,
 
-        "editor.stackFrameHighlightBackground": "#E2BD3A20",
-        "editor.focusedStackFrameHighlightBackground": "#73daca20",
+        "editor.stackFrameHighlightBackground": `${settings.common.yellow}20`,
+        "editor.focusedStackFrameHighlightBackground": `${settings.common.blue}20`,
 
         "debugView.stateLabelForeground": accentForeground,
         "debugView.stateLabelBackground": settings.ui.accent,
