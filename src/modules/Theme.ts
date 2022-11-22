@@ -85,7 +85,7 @@ export namespace Theme {
         descriptionForeground: `${settings.ui.foreground}60`,
         focusBorder: "#ffffff00",
         errorForeground: `${settings.ui.foreground}60`,
-        "widget.shadow": `${settings.ui.border}DD`,
+        "widget.shadow": `${settings.ui.border}80`,
         "scrollbar.shadow": `${settings.ui.border}30`,
         "icon.foreground": tinycolor(settings.ui.foreground)
           .setAlpha(0.5)
@@ -612,7 +612,7 @@ export namespace Theme {
         "menu.separatorBackground": settings.ui.border,
         "menu.border": settings.ui.border,
 
-        "notificationCenterHeader.background": settings.ui.border,
+        "notificationCenterHeader.background": settings.ui.panelBackground,
         "notificationCenterHeader.border": settings.ui.border,
         "notificationToast.border": settings.ui.border,
         "notifications.border": settings.ui.border,
