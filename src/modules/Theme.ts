@@ -40,7 +40,7 @@ export namespace Theme {
     yellow: "#E5C07B",
     orange: "#E67E6F",
     green: "#82c379",
-    purple: "#A08EC6",
+    purple: "#A68FD8",
     pink: "#F1A2CA",
   };
 
@@ -51,7 +51,7 @@ export namespace Theme {
     attributes: "#E5C07B",
     arguments: tinycolor("#E5C07B").lighten(5).desaturate(40).toHex8String(),
     tags: "#0DB5D7",
-    special: "#A08EC6",
+    special: "#A68FD8",
   };
 
   export function prettify(object: unknown) {
