@@ -39,7 +39,7 @@ export namespace Theme {
     blue: "#0DB5D7",
     yellow: "#E5C07B",
     orange: "#E67E6F",
-    green: "#98C379",
+    green: "#82c379",
     purple: "#A08EC6",
     pink: "#F1A2CA",
   };
@@ -47,7 +47,7 @@ export namespace Theme {
   export const syntaxDefault: Syntax = {
     keywords: "#EA5D76",
     storage: "#0DB5D7",
-    string: "#98C379",
+    string: "#82c379",
     attributes: "#E5C07B",
     arguments: tinycolor("#E5C07B").lighten(10).toHex8String(),
     tags: "#0DB5D7",
@@ -465,8 +465,10 @@ export namespace Theme {
         "statusBar.border": settings.ui.border,
         "statusBar.noFolderBackground": settings.ui.panelBackground,
         "statusBar.debuggingBackground": settings.common.yellow,
-        "statusBar.debuggingBorder": settings.common.yellow,
-        "statusBar.debuggingForeground": "#00000098",
+        "statusBar.debuggingBorder": settings.ui.border,
+        "statusBar.debuggingForeground": tinycolor(settings.common.yellow)
+          .darken(50)
+          .toString(),
 
         "statusBarItem.activeBackground": "#00000020",
         "statusBarItem.hoverBackground": "#ffffff10",
