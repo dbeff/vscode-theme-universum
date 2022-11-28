@@ -281,17 +281,18 @@ export namespace Theme {
         "editor.wordHighlightBackground": tinycolor(
           settings.ui.editorBackground
         )
-          .lighten(10)
+          .lighten(7)
           .toHexString(),
         "editor.wordHighlightStrongBackground": tinycolor(
           settings.ui.editorBackground
         )
-          .lighten(10)
+          .lighten(7)
           .toHexString(),
+
         "editor.selectionHighlightBackground": tinycolor(
           settings.ui.editorBackground
         )
-          .lighten(10)
+          .lighten(7)
           .toHexString(),
 
         "editorCursor.foreground": settings.ui.foreground,
