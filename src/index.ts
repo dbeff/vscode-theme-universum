@@ -7,9 +7,9 @@ import { Theme } from "./modules/Theme";
 const mainSettings: Theme.Settings = {
   ui: {
     panelBackground: "#181A28",
-    editorBackground: tinycolor("#181A28").lighten(2).toHexString(),
+    editorBackground: tinycolor("#181A28").lighten(3).toHexString(),
     foreground: "#b6c5d3",
-    border: tinycolor("#0D1117").darken(3).toHexString(),
+    border: tinycolor("#181A28").darken(4).toHexString(),
     accent: "#0A92AE",
   },
   syntax: Theme.syntaxDefault,
@@ -19,7 +19,7 @@ const mainSettings: Theme.Settings = {
 const blueSettings: Theme.Settings = {
   ui: {
     panelBackground: "#181C27",
-    editorBackground: tinycolor("#181C27").lighten(2).toHexString(),
+    editorBackground: tinycolor("#181C27").lighten(3).toHexString(),
     foreground: "#b6c5d3",
     border: tinycolor("#181C27").darken(4).toHexString(),
     accent: "#0A92AE",
@@ -43,9 +43,9 @@ const graySettings: Theme.Settings = {
 const greenSettings: Theme.Settings = {
   ui: {
     panelBackground: "#041920",
-    editorBackground: tinycolor("#041920").lighten(2).toHexString(),
+    editorBackground: tinycolor("#041920").lighten(3).toHexString(),
     foreground: "#C6CCD7",
-    border: tinycolor("#041920").darken(3).toHexString(),
+    border: tinycolor("#041920").darken(4).toHexString(),
     accent: "#0A92AE",
   },
   syntax: Theme.syntaxDefault,
