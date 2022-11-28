@@ -49,7 +49,7 @@ export namespace Theme {
     storage: "#0DB5D7",
     string: "#82c379",
     attributes: "#E5C07B",
-    arguments: tinycolor("#E5C07B").lighten(10).desaturate(35).toHex8String(),
+    arguments: tinycolor("#E5C07B").lighten(5).desaturate(40).toHex8String(),
     tags: "#0DB5D7",
     special: "#A08EC6",
   };
@@ -838,10 +838,7 @@ export namespace Theme {
         },
         {
           name: "Type",
-          scope: [
-            "entity.name.type",
-            "support.type",
-          ],
+          scope: ["entity.name.type", "support.type"],
           settings: {
             foreground: settings.syntax.attributes,
           },

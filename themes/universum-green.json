@@ -521,7 +521,7 @@
       "name": "Variables - Arguments",
       "scope": ["meta.parameters variable", "variable.parameter"],
       "settings": {
-        "foreground": "#dbcfb8ff"
+        "foreground": "#cfc2abff"
       }
     },
     {
