@@ -424,7 +424,12 @@
     },
     {
       "name": "Comment",
-      "scope": ["comment", "punctuation.definition.comment"],
+      "scope": [
+        "comment",
+        "punctuation.definition.comment",
+        "unused.comment",
+        "wildcard.comment"
+      ],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#b6c5d360"
@@ -516,7 +521,7 @@
       "name": "Variables - Arguments",
       "scope": ["meta.parameters variable", "variable.parameter"],
       "settings": {
-        "foreground": "#edd4a6ff"
+        "foreground": "#dbcfb8ff"
       }
     },
     {
@@ -554,7 +559,7 @@
     },
     {
       "name": "Type",
-      "scope": ["meta.type", "meta.interface", "meta.enum", "entity.name.type"],
+      "scope": ["entity.name.type", "support.type"],
       "settings": {
         "foreground": "#E5C07B"
       }
