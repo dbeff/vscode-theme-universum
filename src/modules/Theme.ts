@@ -82,7 +82,7 @@ export namespace Theme {
         "selection.background": tinycolor(settings.ui.panelBackground)
           .lighten(10)
           .toHexString(),
-        descriptionForeground: `${settings.ui.foreground}60`,
+        descriptionForeground: `${settings.ui.foreground}80`,
         focusBorder: "#ffffff00",
         errorForeground: `${settings.ui.foreground}60`,
         "widget.shadow": `${settings.ui.border}80`,
@@ -176,7 +176,7 @@ export namespace Theme {
         "tree.indentGuidesStroke": tinycolor(settings.ui.panelBackground)
           .lighten(15)
           .toHexString(),
-        "sideBar.foreground": `${settings.ui.foreground}80`,
+        "sideBar.foreground": `${settings.ui.foreground}EE`,
         "sideBar.background": settings.ui.panelBackground,
         "sideBar.border": settings.ui.border,
         "sideBarTitle.foreground": `${settings.ui.foreground}80`,
