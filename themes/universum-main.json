@@ -4,10 +4,10 @@
   "type": "dark",
   "colors": {
     "foreground": "#b6c5d3",
-    "selection.background": "#2b2f48",
+    "errorForeground": "#b6c5d360",
     "descriptionForeground": "#b6c5d380",
     "focusBorder": "#ffffff00",
-    "errorForeground": "#b6c5d360",
+    "selection.background": "#2b2f48",
     "widget.shadow": "#10121b80",
     "scrollbar.shadow": "#10121b30",
     "icon.foreground": "#b6c5d380",
@@ -419,7 +419,7 @@
       "scope": ["*url*", "*link*", "*uri*"],
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#0DB5D7"
+        "foreground": "#0A92AE"
       }
     },
     {
@@ -433,13 +433,6 @@
       "settings": {
         "fontStyle": "italic",
         "foreground": "#b6c5d360"
-      }
-    },
-    {
-      "name": "Number, Constant",
-      "scope": ["constant.numeric", "constant.character", "constant.escape"],
-      "settings": {
-        "foreground": "#0db5d7"
       }
     },
     {
@@ -464,8 +457,22 @@
       }
     },
     {
+      "name": "Number, Constant",
+      "scope": ["constant.numeric", "constant.character", "constant.escape"],
+      "settings": {
+        "foreground": "#0DB5D7"
+      }
+    },
+    {
       "name": "Storage",
-      "scope": ["storage", "constant.language", "support.type.builtin"],
+      "scope": ["storage"],
+      "settings": {
+        "foreground": "#0DB5D7"
+      }
+    },
+    {
+      "name": "Language",
+      "scope": ["constant.language", "support.type.builtin"],
       "settings": {
         "foreground": "#0DB5D7"
       }
@@ -513,12 +520,7 @@
     },
     {
       "name": "Method",
-      "scope": [
-        "meta.method",
-        "meta.function",
-        "meta.function-call",
-        "support.function"
-      ],
+      "scope": ["meta.method", "meta.function", "support.function"],
       "settings": {
         "foreground": "#E5C07B"
       }

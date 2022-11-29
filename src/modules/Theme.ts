@@ -79,12 +79,12 @@ export namespace Theme {
       type: "dark",
       colors: {
         foreground: settings.ui.foreground,
+        errorForeground: `${settings.ui.foreground}60`,
+        descriptionForeground: `${settings.ui.foreground}80`,
+        focusBorder: "#ffffff00",
         "selection.background": tinycolor(settings.ui.panelBackground)
           .lighten(10)
           .toHexString(),
-        descriptionForeground: `${settings.ui.foreground}80`,
-        focusBorder: "#ffffff00",
-        errorForeground: `${settings.ui.foreground}60`,
         "widget.shadow": `${settings.ui.border}80`,
         "scrollbar.shadow": `${settings.ui.border}30`,
         "icon.foreground": tinycolor(settings.ui.foreground)
@@ -693,7 +693,7 @@ export namespace Theme {
           scope: ["*url*", "*link*", "*uri*"],
           settings: {
             fontStyle: "underline",
-            foreground: settings.common.blue,
+            foreground: settings.ui.accent,
           },
         },
         {
@@ -709,13 +709,7 @@ export namespace Theme {
             foreground: `${settings.ui.foreground}60`,
           },
         },
-        {
-          name: "Number, Constant",
-          scope: ["constant.numeric", "constant.character", "constant.escape"],
-          settings: {
-            foreground: tinycolor(settings.syntax.storage).toHexString(),
-          },
-        },
+
         {
           name: "String",
           scope: ["string"],
@@ -741,8 +735,22 @@ export namespace Theme {
           },
         },
         {
+          name: "Number, Constant",
+          scope: ["constant.numeric", "constant.character", "constant.escape"],
+          settings: {
+            foreground: settings.syntax.storage,
+          },
+        },
+        {
           name: "Storage",
-          scope: ["storage", "constant.language", "support.type.builtin"],
+          scope: ["storage"],
+          settings: {
+            foreground: settings.syntax.storage,
+          },
+        },
+        {
+          name: "Language",
+          scope: ["constant.language", "support.type.builtin"],
           settings: {
             foreground: settings.syntax.storage,
           },
@@ -791,12 +799,7 @@ export namespace Theme {
         },
         {
           name: "Method",
-          scope: [
-            "meta.method",
-            "meta.function",
-            "meta.function-call",
-            "support.function",
-          ],
+          scope: ["meta.method", "meta.function", "support.function"],
           settings: {
             foreground: settings.syntax.attributes,
           },
