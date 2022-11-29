@@ -453,7 +453,7 @@
       "name": "String - Punctuation",
       "scope": ["string punctuation"],
       "settings": {
-        "foreground": "#b3dbae"
+        "foreground": "#aec4aa"
       }
     },
     {
@@ -472,30 +472,17 @@
     },
     {
       "name": "Keyword",
-      "scope": ["keyword", "support.type.object.module", "variable.language"],
+      "scope": [
+        "keyword",
+        "keyword.operator",
+        "meta.decorator",
+        "punctuation.decorator",
+        "punctuation.definition.keyword",
+        "support.type.object.module",
+        "variable.language"
+      ],
       "settings": {
         "foreground": "#EA5D76"
-      }
-    },
-    {
-      "name": "Keyword - Operator",
-      "scope": ["keyword.operator"],
-      "settings": {
-        "foreground": "#EA5D76"
-      }
-    },
-    {
-      "name": "Decorator",
-      "scope": ["meta.decorator"],
-      "settings": {
-        "foreground": "#EA5D76"
-      }
-    },
-    {
-      "name": "Decorator",
-      "scope": ["punctuation.decorator"],
-      "settings": {
-        "foreground": "#f08a9c"
       }
     },
     {
@@ -568,21 +555,21 @@
       "name": "Tag - Name",
       "scope": ["meta.tag entity.name.tag"],
       "settings": {
-        "foreground": "#26cef0"
+        "foreground": "#1ac2e4"
       }
     },
     {
       "name": "Tag - Markup",
       "scope": ["meta.tag punctuation.definition.tag"],
       "settings": {
-        "foreground": "#0DB5D7BB"
+        "foreground": "#0a8ca7"
       }
     },
     {
       "name": "Tag - attributes",
       "scope": ["meta.tag.attributes", "meta.attribute"],
       "settings": {
-        "foreground": "#0DB5D7CC"
+        "foreground": "#0b99b5"
       }
     },
     {
@@ -593,29 +580,36 @@
       }
     },
     {
+      "name": "CSS - Tag",
+      "scope": ["entity.name.tag.css"],
+      "settings": {
+        "foreground": "#EA5D76"
+      }
+    },
+    {
       "name": "CSS - Classes",
-      "scope": ["entity.other.attribute-name.class"],
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.id.css"
+      ],
       "settings": {
         "foreground": "#E5C07B"
       }
     },
     {
       "name": "CSS - Properties",
-      "scope": [
-        "source.css support.type.property-name",
-        "source.sass support.type.property-name",
-        "source.scss support.type.property-name",
-        "source.less support.type.property-name",
-        "source.stylus support.type.property-name",
-        "source.postcss support.type.property-name"
-      ],
+      "scope": ["support.type.property-name.css"],
       "settings": {
-        "foreground": "#edd4a6ff"
+        "foreground": "#cfc2abff"
       }
     },
     {
       "name": "CSS- ID",
-      "scope": ["meta.selector"],
+      "scope": [
+        "meta.selector.css",
+        "meta.attribute-selector.scss",
+        "entity.other.attribute-name.id.css"
+      ],
       "settings": {
         "foreground": "#E5C07B"
       }
@@ -624,7 +618,34 @@
       "name": "CSS - Value",
       "scope": ["meta.property-value.css"],
       "settings": {
-        "foreground": "#0DB5D7"
+        "foreground": "#b6c5d3"
+      }
+    },
+    {
+      "name": "CSS - Punctuation",
+      "scope": [
+        "punctuation.definition.entity.css",
+        "entity.other.attribute-name.pseudo-element.css"
+      ],
+      "settings": {
+        "foreground": "#EA5D76"
+      }
+    },
+    {
+      "name": "CSS - Unit",
+      "scope": ["source.css keyword.other.unit"],
+      "settings": {
+        "foreground": "#0a8ca7"
+      }
+    },
+    {
+      "name": "CSS - Media",
+      "scope": [
+        "support.constant.media.css",
+        "support.constant.media-type.media"
+      ],
+      "settings": {
+        "foreground": "#A68FD8"
       }
     },
     {
@@ -667,6 +688,20 @@
       "scope": ["storage.modifier.shell"],
       "settings": {
         "foreground": "#EA5D76"
+      }
+    },
+    {
+      "name": "Shell - Variable",
+      "scope": ["variable.other.normal.shell"],
+      "settings": {
+        "foreground": "#A68FD8"
+      }
+    },
+    {
+      "name": "Shell - Variable Punctuation",
+      "scope": ["punctuation.definition.variable.shell"],
+      "settings": {
+        "foreground": "#b5a2df"
       }
     },
     {

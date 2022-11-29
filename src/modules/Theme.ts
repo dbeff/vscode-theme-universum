@@ -728,7 +728,8 @@ export namespace Theme {
           scope: ["string punctuation"],
           settings: {
             foreground: tinycolor(settings.syntax.string)
-              .lighten(15)
+              .lighten(10)
+              .desaturate(20)
               .toHexString(),
           },
         },
@@ -748,35 +749,20 @@ export namespace Theme {
         },
         {
           name: "Keyword",
-          scope: ["keyword", "support.type.object.module", "variable.language"],
+          scope: [
+            "keyword",
+            "keyword.operator",
+            "meta.decorator",
+            "punctuation.decorator",
+            "punctuation.definition.keyword",
+            "support.type.object.module",
+            "variable.language",
+          ],
           settings: {
             foreground: settings.syntax.keywords,
           },
         },
 
-        {
-          name: "Keyword - Operator",
-          scope: ["keyword.operator"],
-          settings: {
-            foreground: settings.syntax.keywords,
-          },
-        },
-        {
-          name: "Decorator",
-          scope: ["meta.decorator"],
-          settings: {
-            foreground: settings.syntax.keywords,
-          },
-        },
-        {
-          name: "Decorator",
-          scope: ["punctuation.decorator"],
-          settings: {
-            foreground: tinycolor(settings.syntax.keywords)
-              .lighten(10)
-              .toHexString(),
-          },
-        },
         {
           name: "Variables, Objects",
           scope: [
@@ -848,7 +834,7 @@ export namespace Theme {
           scope: ["meta.tag entity.name.tag"],
           settings: {
             foreground: tinycolor(settings.syntax.tags)
-              .brighten(10)
+              .brighten(5)
               .toHexString(),
           },
         },
@@ -856,14 +842,14 @@ export namespace Theme {
           name: "Tag - Markup",
           scope: ["meta.tag punctuation.definition.tag"],
           settings: {
-            foreground: `${settings.syntax.tags}BB`,
+            foreground: tinycolor(settings.syntax.tags).darken(10).toString(),
           },
         },
         {
           name: "Tag - attributes",
           scope: ["meta.tag.attributes", "meta.attribute"],
           settings: {
-            foreground: `${settings.syntax.tags}CC`,
+            foreground: tinycolor(settings.syntax.tags).darken(7).toString(),
           },
         },
         {
@@ -874,31 +860,36 @@ export namespace Theme {
           },
         },
         {
+          name: "CSS - Tag",
+          scope: ["entity.name.tag.css"],
+          settings: {
+            foreground: settings.syntax.keywords,
+          },
+        },
+        {
           name: "CSS - Classes",
-          scope: ["entity.other.attribute-name.class"],
+          scope: [
+            "entity.other.attribute-name.class.css",
+            "entity.other.attribute-name.id.css",
+          ],
           settings: {
             foreground: settings.syntax.attributes,
           },
         },
         {
           name: "CSS - Properties",
-          scope: [
-            "source.css support.type.property-name",
-            "source.sass support.type.property-name",
-            "source.scss support.type.property-name",
-            "source.less support.type.property-name",
-            "source.stylus support.type.property-name",
-            "source.postcss support.type.property-name",
-          ],
+          scope: ["support.type.property-name.css"],
           settings: {
-            foreground: tinycolor(settings.syntax.attributes)
-              .lighten(10)
-              .toHex8String(),
+            foreground: settings.syntax.arguments,
           },
         },
         {
           name: "CSS- ID",
-          scope: ["meta.selector"],
+          scope: [
+            "meta.selector.css",
+            "meta.attribute-selector.scss",
+            "entity.other.attribute-name.id.css",
+          ],
           settings: {
             foreground: settings.syntax.attributes,
           },
@@ -907,7 +898,36 @@ export namespace Theme {
           name: "CSS - Value",
           scope: ["meta.property-value.css"],
           settings: {
-            foreground: settings.syntax.storage,
+            foreground: settings.ui.foreground,
+          },
+        },
+        {
+          name: "CSS - Punctuation",
+          scope: [
+            "punctuation.definition.entity.css",
+            "entity.other.attribute-name.pseudo-element.css",
+          ],
+          settings: {
+            foreground: settings.syntax.keywords,
+          },
+        },
+        {
+          name: "CSS - Unit",
+          scope: ["source.css keyword.other.unit"],
+          settings: {
+            foreground: tinycolor(settings.syntax.storage)
+              .darken(10)
+              .toString(),
+          },
+        },
+        {
+          name: "CSS - Media",
+          scope: [
+            "support.constant.media.css",
+            "support.constant.media-type.media",
+          ],
+          settings: {
+            foreground: settings.syntax.special,
           },
         },
         {
@@ -950,6 +970,22 @@ export namespace Theme {
           scope: ["storage.modifier.shell"],
           settings: {
             foreground: settings.syntax.keywords,
+          },
+        },
+        {
+          name: "Shell - Variable",
+          scope: ["variable.other.normal.shell"],
+          settings: {
+            foreground: settings.syntax.special,
+          },
+        },
+        {
+          name: "Shell - Variable Punctuation",
+          scope: ["punctuation.definition.variable.shell"],
+          settings: {
+            foreground: tinycolor(settings.syntax.special)
+              .lighten(5)
+              .toString(),
           },
         },
         {
