@@ -2,6 +2,13 @@ import tinycolor from "tinycolor2";
 import prettier from "prettier";
 
 export namespace Theme {
+  export interface UI {
+    editorBackground: string;
+    panelBackground: string;
+    foreground: string;
+    border: string;
+    accent: string;
+  }
   export interface Syntax {
     keywords: string;
     storage: string;
@@ -23,16 +30,18 @@ export namespace Theme {
   }
 
   export interface Settings {
-    ui: {
-      editorBackground: string;
-      panelBackground: string;
-      foreground: string;
-      border: string;
-      accent: string;
-    };
+    ui: UI;
     syntax: Syntax;
     common: Common;
   }
+
+  export const uiDefault = (color: string, accent?: string): UI => ({
+    panelBackground: color,
+    editorBackground: tinycolor(color).lighten(3).toHexString(),
+    foreground: tinycolor(color).lighten(65).toString(),
+    border: tinycolor(color).darken(5).toHexString(),
+    accent: accent || tinycolor(color).lighten(35).saturate(20).toString(),
+  });
 
   export const commonDefault: Common = {
     red: "#EA5D76",
@@ -176,7 +185,7 @@ export namespace Theme {
         "tree.indentGuidesStroke": tinycolor(settings.ui.panelBackground)
           .lighten(15)
           .toHexString(),
-        "sideBar.foreground": `${settings.ui.foreground}EE`,
+        "sideBar.foreground": `${settings.ui.foreground}DD`,
         "sideBar.background": settings.ui.panelBackground,
         "sideBar.border": settings.ui.border,
         "sideBarTitle.foreground": `${settings.ui.foreground}80`,
@@ -709,7 +718,15 @@ export namespace Theme {
             foreground: `${settings.ui.foreground}60`,
           },
         },
-
+        {
+          name: "Punctuation",
+          scope: ["punctuation", "meta.brace"],
+          settings: {
+            foreground: tinycolor(settings.ui.editorBackground)
+              .lighten(50)
+              .toString(),
+          },
+        },
         {
           name: "String",
           scope: ["string"],
@@ -728,10 +745,10 @@ export namespace Theme {
           },
         },
         {
-          name: "Punctuation",
-          scope: ["punctuation"],
+          name: "String - Template expression",
+          scope: ["punctuation.definition.template-expression"],
           settings: {
-            foreground: `${settings.ui.foreground}DD`,
+            foreground: settings.syntax.storage,
           },
         },
         {
