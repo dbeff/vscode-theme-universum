@@ -21,6 +21,6 @@ Ligatures recommended:
 
 ## Slack Theme
 
-```css
+```
 #1E2031,#2C3849,#4190AB,#FFFFFF,#2F324C,#B7BBD4,#98C379,#4190AB,#1E2031,#B7BBD4
 ```
