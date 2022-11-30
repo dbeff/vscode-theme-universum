@@ -1,6 +1,5 @@
 # Universum Theme
 
-## Theme 
 
 ![Screenshot](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/screenshot.png)
 
@@ -9,9 +8,19 @@
 
 ![Colors](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/colors.png)
 
+## Font
+
+[Fira Code](https://github.com/tonsky/FiraCode)
+
+Ligatures recommended:
+
+```JSON
+"editor.fontLigatures": "'cv01','cv02','cv16','cv29','ss01','ss04'",
+```
+
 
 ## Slack Theme
 
-```
-#1B1D2A,#2C3849,#0A92AE,#FFFFFF,#12131D,#b6c5d3,#98C379,#D19C3B,#1B1D2A,#b6c5d3
+```css
+#1E2031,#2C3849,#4190AB,#FFFFFF,#2F324C,#B7BBD4,#98C379,#4190AB,#1E2031,#B7BBD4
 ```
