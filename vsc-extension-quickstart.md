@@ -22,6 +22,9 @@
 
 To learn more about scopes and how they're used, check out the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
 
+
+To learn more about [Semantic Token Selector](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide)
+
 ## Install your extension
 
 * To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.

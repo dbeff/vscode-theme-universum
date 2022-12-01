@@ -15,7 +15,7 @@
 Ligatures recommended:
 
 ```JSON
-"editor.fontLigatures": "'cv01','cv02','cv16','cv29','ss01','ss04'",
+"editor.fontLigatures": "'cv01','cv02','cv16','ss04'"
 ```
 
 

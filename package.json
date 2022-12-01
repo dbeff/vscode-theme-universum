@@ -12,7 +12,8 @@
   "scripts": {
     "start": "ts-node-dev --respawn ./src/index.ts",
     "prerelease": "npm run build",
-    "release": "vsce publish"
+    "release": "vsce publish",
+    "check-types": "tsc --noemit --skipLibCheck"
   },
   "engines": {
     "node": ">=15.0.0",

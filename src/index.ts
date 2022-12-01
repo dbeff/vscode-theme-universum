@@ -14,9 +14,9 @@ const generateFiles = async () => {
         "./themes/universum-main.json",
         Theme.prettify(
           Theme.getSchema({
-            ui: Theme.uiDefault("#181A28", "#0A92AE"),
+            ui: Theme.uiDefault("#181A28", "#0B97B3"),
             syntax: Theme.syntaxDefault,
-            common: Theme.commonDefault,
+            palette: Theme.paletteDefault,
           })
         )
       ),
@@ -24,9 +24,9 @@ const generateFiles = async () => {
         "./themes/universum-blue.json",
         Theme.prettify(
           Theme.getSchema({
-            ui: Theme.uiDefault("#181C27", "#0A92AE"),
+            ui: Theme.uiDefault("#181C27", "#0B97B3"),
             syntax: Theme.syntaxDefault,
-            common: Theme.commonDefault,
+            palette: Theme.paletteDefault,
           })
         )
       ),
@@ -34,9 +34,9 @@ const generateFiles = async () => {
         "./themes/universum-gray.json",
         Theme.prettify(
           Theme.getSchema({
-            ui: Theme.uiDefault("#181A1F", "#0A92AE"),
+            ui: Theme.uiDefault("#181A1F", "#0B97B3"),
             syntax: Theme.syntaxDefault,
-            common: Theme.commonDefault,
+            palette: Theme.paletteDefault,
           })
         )
       ),
@@ -44,9 +44,9 @@ const generateFiles = async () => {
         "./themes/universum-green.json",
         Theme.prettify(
           Theme.getSchema({
-            ui: Theme.uiDefault("#0f1d22", "#0A92AE"),
+            ui: Theme.uiDefault("#0f1d22", "#0B97B3"),
             syntax: Theme.syntaxDefault,
-            common: Theme.commonDefault,
+            palette: Theme.paletteDefault,
           })
         )
       ),

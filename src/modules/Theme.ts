@@ -14,12 +14,12 @@ export namespace Theme {
     storage: string;
     string: string;
     attributes: string;
-    tags: string;
     arguments: string;
+    tags: string;
     special: string;
   }
 
-  export interface Common {
+  export interface Palette {
     green: string;
     red: string;
     yellow: string;
@@ -32,7 +32,7 @@ export namespace Theme {
   export interface Settings {
     ui: UI;
     syntax: Syntax;
-    common: Common;
+    palette: Palette;
   }
 
   export const uiDefault = (color: string, accent?: string): UI => ({
@@ -43,24 +43,24 @@ export namespace Theme {
     accent: accent || tinycolor(color).lighten(35).saturate(20).toString(),
   });
 
-  export const commonDefault: Common = {
-    red: "#EA5D76",
-    blue: "#0DB5D7",
+  export const paletteDefault: Palette = {
+    red: "#E65C75",
+    blue: "#0EC2E6",
     yellow: "#E5C07B",
-    orange: "#E67E6F",
-    green: "#82c379",
-    purple: "#A68FD8",
-    pink: "#F1A2CA",
+    orange: "#E69770",
+    green: "#88CC7E",
+    purple: "#BF98E6",
+    pink: "#E69AC0",
   };
 
   export const syntaxDefault: Syntax = {
-    keywords: "#EA5D76",
-    storage: "#0DB5D7",
-    string: "#82c379",
-    attributes: "#E5C07B",
-    arguments: tinycolor("#E5C07B").lighten(5).desaturate(40).toHex8String(),
-    tags: "#0DB5D7",
-    special: "#A68FD8",
+    keywords: paletteDefault.red,
+    storage: paletteDefault.blue,
+    string: paletteDefault.green,
+    attributes: paletteDefault.yellow,
+    arguments: paletteDefault.purple,
+    tags: paletteDefault.blue,
+    special: paletteDefault.purple,
   };
 
   export function prettify(object: unknown) {
@@ -70,15 +70,15 @@ export namespace Theme {
   }
 
   export function getSchema(settings: Theme.Settings): unknown {
-    const accentForeground = tinycolor(settings.common.yellow)
+    const accentForeground = tinycolor(settings.palette.yellow)
       .lighten(50)
       .toString();
 
-    const findMatchBackground = tinycolor(settings.common.yellow)
+    const findMatchBackground = tinycolor(settings.palette.yellow)
       .setAlpha(0.2)
       .toHex8String();
 
-    const findMatchBorder = tinycolor(settings.common.yellow)
+    const findMatchBorder = tinycolor(settings.palette.yellow)
       .setAlpha(0.8)
       .toHexString();
 
@@ -131,7 +131,7 @@ export namespace Theme {
         "extensionButton.prominentForeground": accentForeground,
         "extensionBadge.remoteBackground": `${settings.ui.accent}`,
         "extensionBadge.remoteForeground": accentForeground,
-        "extensionIcon.starForeground": settings.common.yellow,
+        "extensionIcon.starForeground": settings.palette.yellow,
 
         "button.background": `${settings.ui.accent}`,
         "button.hoverBackground": `${settings.ui.accent}BB`,
@@ -153,20 +153,20 @@ export namespace Theme {
           .toHexString(),
 
         "inputValidation.infoForeground": settings.ui.foreground,
-        "inputValidation.infoBackground": tinycolor(settings.common.blue)
+        "inputValidation.infoBackground": tinycolor(settings.palette.blue)
           .darken(50)
           .toString(),
-        "inputValidation.infoBorder": settings.common.blue,
+        "inputValidation.infoBorder": settings.palette.blue,
         "inputValidation.warningForeground": settings.ui.foreground,
-        "inputValidation.warningBackground": tinycolor(settings.common.yellow)
+        "inputValidation.warningBackground": tinycolor(settings.palette.yellow)
           .darken(50)
           .toString(),
-        "inputValidation.warningBorder": settings.common.yellow,
+        "inputValidation.warningBorder": settings.palette.yellow,
         "inputValidation.errorForeground": settings.ui.foreground,
-        "inputValidation.errorBackground": tinycolor(settings.common.red)
+        "inputValidation.errorBackground": tinycolor(settings.palette.red)
           .darken(50)
           .toString(),
-        "inputValidation.errorBorder": settings.common.red,
+        "inputValidation.errorBorder": settings.palette.red,
 
         "dropdown.foreground": `${settings.ui.foreground}90`,
         "dropdown.background": settings.ui.panelBackground,
@@ -216,13 +216,13 @@ export namespace Theme {
         "list.hoverForeground": settings.ui.foreground,
 
         "list.highlightForeground": settings.ui.foreground,
-        "list.invalidItemForeground": `${settings.common.purple}DD`,
-        "list.errorForeground": `${settings.common.red}DD`,
-        "list.warningForeground": `${settings.common.yellow}DD`,
+        "list.invalidItemForeground": `${settings.palette.purple}DD`,
+        "list.errorForeground": `${settings.palette.red}DD`,
+        "list.warningForeground": `${settings.palette.yellow}DD`,
 
         "listFilterWidget.background": settings.ui.border,
-        "listFilterWidget.outline": settings.common.blue,
-        "listFilterWidget.noMatchesOutline": settings.common.red,
+        "listFilterWidget.outline": settings.palette.blue,
+        "listFilterWidget.noMatchesOutline": settings.palette.red,
 
         "pickerGroup.foreground": settings.ui.foreground,
         "pickerGroup.border": settings.ui.border,
@@ -252,7 +252,7 @@ export namespace Theme {
         "editorBracketHighlight.foreground5": `${settings.syntax.storage}CC`,
         "editorBracketHighlight.foreground6": `${settings.syntax.attributes}CC`,
 
-        "editorBracketHighlight.unexpectedBracket.foreground": `${settings.common.red}`,
+        "editorBracketHighlight.unexpectedBracket.foreground": `${settings.palette.red}`,
 
         "editorBracketPairGuide.activeBackground1": `${settings.syntax.storage}AA`,
         "editorBracketPairGuide.activeBackground2": `${settings.syntax.attributes}AA`,
@@ -286,7 +286,7 @@ export namespace Theme {
         )
           .lighten(15)
           .toHexString(),
-        "editor.rangeHighlightBackground": `${settings.common.yellow}20`,
+        "editor.rangeHighlightBackground": `${settings.palette.yellow}20`,
         "editor.wordHighlightBackground": tinycolor(
           settings.ui.editorBackground
         )
@@ -332,24 +332,24 @@ export namespace Theme {
         "editorBracketMatch.border": `${settings.ui.foreground}AA`,
 
         "editorOverviewRuler.border": settings.ui.border,
-        "editorOverviewRuler.errorForeground": `${settings.common.red}CC`,
-        "editorOverviewRuler.warningForeground": `${settings.common.yellow}CC`,
-        "editorOverviewRuler.infoForeground": `${settings.common.blue}CC`,
+        "editorOverviewRuler.errorForeground": `${settings.palette.red}CC`,
+        "editorOverviewRuler.warningForeground": `${settings.palette.yellow}CC`,
+        "editorOverviewRuler.infoForeground": `${settings.palette.blue}CC`,
         "editorOverviewRuler.bracketMatchForeground": settings.ui.border,
         "editorOverviewRuler.findMatchForeground": `${settings.ui.foreground}44`,
         "editorOverviewRuler.rangeHighlightForeground": `${settings.ui.foreground}44`,
         "editorOverviewRuler.selectionHighlightForeground": `${settings.ui.foreground}22`,
-        "editorOverviewRuler.wordHighlightForeground": `${settings.common.green}50`,
-        "editorOverviewRuler.wordHighlightStrongForeground": `${settings.common.purple}60`,
-        "editorOverviewRuler.modifiedForeground": `${settings.common.blue}60`,
-        "editorOverviewRuler.addedForeground": `${settings.common.green}60`,
-        "editorOverviewRuler.deletedForeground": `${settings.common.red}60`,
+        "editorOverviewRuler.wordHighlightForeground": `${settings.palette.green}50`,
+        "editorOverviewRuler.wordHighlightStrongForeground": `${settings.palette.purple}60`,
+        "editorOverviewRuler.modifiedForeground": `${settings.palette.blue}60`,
+        "editorOverviewRuler.addedForeground": `${settings.palette.green}60`,
+        "editorOverviewRuler.deletedForeground": `${settings.palette.red}60`,
 
         "editorRuler.foreground": settings.ui.border,
-        "editorError.foreground": settings.common.red,
-        "editorWarning.foreground": settings.common.yellow,
-        "editorInfo.foreground": settings.common.blue,
-        "editorHint.foreground": settings.common.blue,
+        "editorError.foreground": settings.palette.red,
+        "editorWarning.foreground": settings.palette.yellow,
+        "editorInfo.foreground": settings.palette.blue,
+        "editorHint.foreground": settings.palette.blue,
 
         "editorInlayHint.background": tinycolor(settings.ui.editorBackground)
           .lighten(10)
@@ -364,15 +364,15 @@ export namespace Theme {
           .setAlpha(0.5)
           .toHex8String(),
 
-        "editorGutter.modifiedBackground": `${settings.common.blue}AA`,
-        "editorGutter.addedBackground": `${settings.common.green}AA`,
-        "editorGutter.deletedBackground": `${settings.common.red}AA`,
+        "editorGutter.modifiedBackground": `${settings.palette.blue}AA`,
+        "editorGutter.addedBackground": `${settings.palette.green}AA`,
+        "editorGutter.deletedBackground": `${settings.palette.red}AA`,
 
         "editorGhostText.foreground": `${settings.ui.foreground}AA`,
 
-        "minimapGutter.modifiedBackground": `${settings.common.blue}AA`,
-        "minimapGutter.addedBackground": `${settings.common.green}AA`,
-        "minimapGutter.deletedBackground": `${settings.common.red}AA`,
+        "minimapGutter.modifiedBackground": `${settings.palette.blue}AA`,
+        "minimapGutter.addedBackground": `${settings.palette.green}AA`,
+        "minimapGutter.deletedBackground": `${settings.palette.red}AA`,
 
         "editorGroup.border": settings.ui.border,
         "editorGroup.dropBackground": `${settings.ui.accent}40`,
@@ -398,8 +398,8 @@ export namespace Theme {
           .toHexString(),
 
         "editorCodeLens.foreground": `${settings.ui.foreground}AA`,
-        "editorLightBulb.foreground": settings.common.yellow,
-        "editorLightBulbAutoFix.foreground": tinycolor(settings.common.yellow)
+        "editorLightBulb.foreground": settings.palette.yellow,
+        "editorLightBulbAutoFix.foreground": tinycolor(settings.palette.yellow)
           .darken(10)
           .toHexString(),
 
@@ -424,14 +424,14 @@ export namespace Theme {
           .toHex8String(),
         "peekViewResult.matchHighlightBackground": `${settings.ui.foreground}30`,
 
-        "diffEditor.insertedTextBackground": `${settings.common.blue}20`,
-        "diffEditor.removedTextBackground": `${settings.common.red}20`,
-        "diffEditor.insertedLineBackground": `${settings.common.blue}20`,
-        "diffEditor.removedLineBackground": `${settings.common.red}20`,
-        "diffEditorGutter.insertedLineBackground": `${settings.common.blue}25`,
-        "diffEditorGutter.removedLineBackground": `${settings.common.red}25`,
-        "diffEditorOverview.insertedForeground": `${settings.common.blue}25`,
-        "diffEditorOverview.removedForeground": `${settings.common.red}25`,
+        "diffEditor.insertedTextBackground": `${settings.palette.blue}20`,
+        "diffEditor.removedTextBackground": `${settings.palette.red}20`,
+        "diffEditor.insertedLineBackground": `${settings.palette.blue}20`,
+        "diffEditor.removedLineBackground": `${settings.palette.red}20`,
+        "diffEditorGutter.insertedLineBackground": `${settings.palette.blue}25`,
+        "diffEditorGutter.removedLineBackground": `${settings.palette.red}25`,
+        "diffEditorOverview.insertedForeground": `${settings.palette.blue}25`,
+        "diffEditorOverview.removedForeground": `${settings.palette.red}25`,
         "diffEditor.diagonalFill": "#292e42",
 
         "breadcrumb.background": settings.ui.editorBackground,
@@ -474,9 +474,9 @@ export namespace Theme {
         "statusBar.background": settings.ui.editorBackground,
         "statusBar.border": settings.ui.border,
         "statusBar.noFolderBackground": settings.ui.panelBackground,
-        "statusBar.debuggingBackground": settings.common.yellow,
+        "statusBar.debuggingBackground": settings.palette.yellow,
         "statusBar.debuggingBorder": settings.ui.border,
-        "statusBar.debuggingForeground": tinycolor(settings.common.yellow)
+        "statusBar.debuggingForeground": tinycolor(settings.palette.yellow)
           .darken(50)
           .toString(),
 
@@ -506,7 +506,7 @@ export namespace Theme {
         "textCodeBlock.background": settings.ui.panelBackground,
         "textSeparator.foreground": `${settings.ui.panelBackground}60`,
 
-        "debugExceptionWidget.border": settings.common.red,
+        "debugExceptionWidget.border": settings.palette.red,
         "debugExceptionWidget.background": settings.ui.border,
         "debugToolBar.border": settings.ui.border,
         "debugToolBar.background": tinycolor(settings.ui.panelBackground)
@@ -519,65 +519,65 @@ export namespace Theme {
         "debugConsole.infoForeground": tinycolor(settings.ui.foreground)
           .setAlpha(0.5)
           .toHex8String(),
-        "debugConsole.errorForeground": tinycolor(settings.common.red)
+        "debugConsole.errorForeground": tinycolor(settings.palette.red)
           .lighten(10)
           .toHexString(),
-        "debugConsole.warningForeground": tinycolor(settings.common.yellow)
+        "debugConsole.warningForeground": tinycolor(settings.palette.yellow)
           .darken(10)
           .toHexString(),
         "debugConsoleInputIcon.foreground": settings.ui.foreground,
 
-        "editor.stackFrameHighlightBackground": `${settings.common.yellow}20`,
-        "editor.focusedStackFrameHighlightBackground": `${settings.common.blue}20`,
+        "editor.stackFrameHighlightBackground": `${settings.palette.yellow}20`,
+        "editor.focusedStackFrameHighlightBackground": `${settings.palette.blue}20`,
 
         "debugView.stateLabelForeground": accentForeground,
         "debugView.stateLabelBackground": settings.ui.accent,
-        "debugView.valueChangedHighlight": settings.common.blue,
+        "debugView.valueChangedHighlight": settings.palette.blue,
 
-        "debugTokenExpression.name": settings.common.blue,
-        "debugTokenExpression.value": settings.common.purple,
-        "debugTokenExpression.string": settings.common.green,
-        "debugTokenExpression.boolean": settings.common.yellow,
-        "debugTokenExpression.number": settings.common.yellow,
-        "debugTokenExpression.error": settings.common.red,
+        "debugTokenExpression.name": settings.palette.blue,
+        "debugTokenExpression.value": settings.palette.purple,
+        "debugTokenExpression.string": settings.palette.green,
+        "debugTokenExpression.boolean": settings.palette.yellow,
+        "debugTokenExpression.number": settings.palette.yellow,
+        "debugTokenExpression.error": settings.palette.red,
 
-        "debugIcon.stopForeground": settings.common.red,
-        "debugIcon.restartForeground": settings.common.green,
-        "debugIcon.pauseForeground": settings.common.blue,
+        "debugIcon.stopForeground": settings.palette.red,
+        "debugIcon.restartForeground": settings.palette.green,
+        "debugIcon.pauseForeground": settings.palette.blue,
 
-        "debugIcon.breakpointForeground": settings.common.red,
+        "debugIcon.breakpointForeground": settings.palette.red,
         "debugIcon.breakpointDisabledForeground": `${settings.ui.foreground}AA`,
-        "debugIcon.breakpointUnverifiedForeground": `${settings.common.red}AA`,
+        "debugIcon.breakpointUnverifiedForeground": `${settings.palette.red}AA`,
 
         "terminal.background": settings.ui.panelBackground,
         "terminal.foreground": settings.ui.foreground,
         "terminal.selectionBackground": `${settings.ui.foreground}20`,
 
         "terminal.ansiBlack": `${settings.ui.foreground}20`,
-        "terminal.ansiRed": settings.common.red,
-        "terminal.ansiGreen": settings.common.green,
-        "terminal.ansiYellow": settings.common.yellow,
-        "terminal.ansiBlue": settings.common.blue,
-        "terminal.ansiMagenta": settings.common.purple,
-        "terminal.ansiCyan": settings.common.blue,
+        "terminal.ansiRed": settings.palette.red,
+        "terminal.ansiGreen": settings.palette.green,
+        "terminal.ansiYellow": settings.palette.yellow,
+        "terminal.ansiBlue": settings.palette.blue,
+        "terminal.ansiMagenta": settings.palette.purple,
+        "terminal.ansiCyan": settings.palette.blue,
         "terminal.ansiWhite": settings.ui.foreground,
         "terminal.ansiBrightBlack": settings.ui.panelBackground,
-        "terminal.ansiBrightRed": settings.common.red,
-        "terminal.ansiBrightGreen": settings.common.green,
-        "terminal.ansiBrightYellow": settings.common.yellow,
-        "terminal.ansiBrightBlue": settings.common.blue,
-        "terminal.ansiBrightMagenta": settings.common.purple,
-        "terminal.ansiBrightCyan": settings.common.blue,
+        "terminal.ansiBrightRed": settings.palette.red,
+        "terminal.ansiBrightGreen": settings.palette.green,
+        "terminal.ansiBrightYellow": settings.palette.yellow,
+        "terminal.ansiBrightBlue": settings.palette.blue,
+        "terminal.ansiBrightMagenta": settings.palette.purple,
+        "terminal.ansiBrightCyan": settings.palette.blue,
         "terminal.ansiBrightWhite": settings.ui.foreground,
 
-        "gitDecoration.addedResourceForeground": `${settings.common.green}DD`,
-        "gitDecoration.untrackedResourceForeground": `${settings.common.green}DD`,
-        "gitDecoration.renamedResourceForeground": `${settings.common.yellow}DD`,
-        "gitDecoration.modifiedResourceForeground": `${settings.common.yellow}DD`,
-        "gitDecoration.stageModifiedResourceForeground": `${settings.common.yellow}DD`,
-        "gitDecoration.deletedResourceForeground": `${settings.common.red}DD`,
-        "gitDecoration.stageDeletedResourceForeground": `${settings.common.red}DD`,
-        "gitDecoration.conflictingResourceForeground": `${settings.common.purple}DD`,
+        "gitDecoration.addedResourceForeground": `${settings.palette.green}DD`,
+        "gitDecoration.untrackedResourceForeground": `${settings.palette.green}DD`,
+        "gitDecoration.renamedResourceForeground": `${settings.palette.yellow}DD`,
+        "gitDecoration.modifiedResourceForeground": `${settings.palette.yellow}DD`,
+        "gitDecoration.stageModifiedResourceForeground": `${settings.palette.yellow}DD`,
+        "gitDecoration.deletedResourceForeground": `${settings.palette.red}DD`,
+        "gitDecoration.stageDeletedResourceForeground": `${settings.palette.red}DD`,
+        "gitDecoration.conflictingResourceForeground": `${settings.palette.purple}DD`,
         "gitDecoration.ignoredResourceForeground": `${settings.ui.foreground}60`,
 
         "notebook.editorBackground": "#1a1b26",
@@ -586,29 +586,29 @@ export namespace Theme {
         "notebook.focusedCellBorder": "#29355a",
         "notebook.cellStatusBarItemHoverBackground": "#1c1d29",
 
-        "charts.red": settings.common.red,
-        "charts.blue": settings.common.blue,
-        "charts.yellow": settings.common.yellow,
-        "charts.orange": settings.common.orange,
-        "charts.green": settings.common.green,
-        "charts.purple": settings.common.purple,
+        "charts.red": settings.palette.red,
+        "charts.blue": settings.palette.blue,
+        "charts.yellow": settings.palette.yellow,
+        "charts.orange": settings.palette.orange,
+        "charts.green": settings.palette.green,
+        "charts.purple": settings.palette.purple,
         "charts.foreground": settings.ui.foreground,
         "charts.lines": settings.ui.panelBackground,
 
-        "merge.currentHeaderBackground": `${settings.common.blue}25`,
-        "merge.currentContentBackground": `${settings.common.blue}45`,
-        "merge.incomingHeaderBackground": `${settings.common.blue}AA`,
-        "merge.incomingContentBackground": `${settings.common.blue}45`,
-        "mergeEditor.change.background": `${settings.common.blue}25`,
-        "mergeEditor.change.word.background": `${settings.common.blue}40`,
-        "mergeEditor.conflict.unhandledUnfocused.border": `${settings.common.yellow}25`,
-        "mergeEditor.conflict.unhandledFocused.border": `${settings.common.yellow}65`,
-        "mergeEditor.conflict.handledUnfocused.border": `${settings.common.blue}25`,
-        "mergeEditor.conflict.handledFocused.border": `${settings.common.blue}65`,
+        "merge.currentHeaderBackground": `${settings.palette.blue}25`,
+        "merge.currentContentBackground": `${settings.palette.blue}45`,
+        "merge.incomingHeaderBackground": `${settings.palette.blue}AA`,
+        "merge.incomingContentBackground": `${settings.palette.blue}45`,
+        "mergeEditor.change.background": `${settings.palette.blue}25`,
+        "mergeEditor.change.word.background": `${settings.palette.blue}40`,
+        "mergeEditor.conflict.unhandledUnfocused.border": `${settings.palette.yellow}25`,
+        "mergeEditor.conflict.unhandledFocused.border": `${settings.palette.yellow}65`,
+        "mergeEditor.conflict.handledUnfocused.border": `${settings.palette.blue}25`,
+        "mergeEditor.conflict.handledFocused.border": `${settings.palette.blue}65`,
         "mergeEditor.conflict.handled.minimapOverViewRuler":
-          settings.common.blue,
+          settings.palette.blue,
         "mergeEditor.conflict.unhandled.minimapOverViewRuler":
-          settings.common.yellow,
+          settings.palette.yellow,
 
         "menubar.selectionForeground": settings.ui.foreground,
         "menubar.selectionBackground": settings.ui.panelBackground,
@@ -629,10 +629,10 @@ export namespace Theme {
         "notificationToast.border": settings.ui.border,
         "notifications.border": settings.ui.border,
         "notifications.background": settings.ui.panelBackground,
-        "notificationLink.foreground": settings.common.blue,
-        "notificationsErrorIcon.foreground": settings.common.red,
-        "notificationsWarningIcon.foreground": settings.common.yellow,
-        "notificationsInfoIcon.foreground": settings.common.yellow,
+        "notificationLink.foreground": settings.palette.blue,
+        "notificationsErrorIcon.foreground": settings.palette.red,
+        "notificationsWarningIcon.foreground": settings.palette.yellow,
+        "notificationsInfoIcon.foreground": settings.palette.yellow,
 
         "keybindingLabel.foreground": settings.ui.panelBackground,
         "keybindingLabel.background": settings.ui.foreground,
@@ -641,39 +641,39 @@ export namespace Theme {
         "keybindingTable.headerBackground": settings.ui.foreground,
         "keybindingTable.rowsBackground": settings.ui.foreground,
 
-        "symbolIcon.arrayForeground": settings.common.blue,
-        "symbolIcon.booleanForeground": settings.common.blue,
-        "symbolIcon.classForeground": settings.common.yellow,
-        "symbolIcon.namespaceForeground": settings.common.purple,
-        "symbolIcon.moduleForeground": settings.common.blue,
-        "symbolIcon.colorForeground": settings.common.blue,
-        "symbolIcon.constantForeground": settings.common.green,
-        "symbolIcon.constructorForeground": settings.common.blue,
-        "symbolIcon.enumeratorForeground": settings.common.blue,
-        "symbolIcon.enumeratorMemberForeground": settings.common.blue,
-        "symbolIcon.eventForeground": settings.common.blue,
-        "symbolIcon.fieldForeground": settings.common.blue,
-        "symbolIcon.fileForeground": settings.common.blue,
-        "symbolIcon.folderForeground": settings.common.blue,
-        "symbolIcon.functionForeground": settings.common.blue,
-        "symbolIcon.interfaceForeground": settings.common.blue,
-        "symbolIcon.keyForeground": settings.common.blue,
-        "symbolIcon.keywordForeground": settings.common.blue,
-        "symbolIcon.methodForeground": settings.common.blue,
-        "symbolIcon.nullForeground": settings.common.red,
-        "symbolIcon.numberForeground": settings.common.red,
-        "symbolIcon.objectForeground": settings.common.blue,
-        "symbolIcon.operatorForeground": settings.common.blue,
-        "symbolIcon.packageForeground": settings.common.blue,
-        "symbolIcon.propertyForeground": settings.common.yellow,
-        "symbolIcon.referenceForeground": settings.common.blue,
-        "symbolIcon.snippetForeground": settings.common.blue,
-        "symbolIcon.stringForeground": settings.common.green,
-        "symbolIcon.structForeground": settings.common.blue,
-        "symbolIcon.textForeground": settings.common.green,
-        "symbolIcon.typeParameterForeground": settings.common.blue,
-        "symbolIcon.unitForeground": settings.common.blue,
-        "symbolIcon.variableForeground": settings.common.blue,
+        "symbolIcon.arrayForeground": settings.palette.blue,
+        "symbolIcon.booleanForeground": settings.palette.blue,
+        "symbolIcon.classForeground": settings.palette.yellow,
+        "symbolIcon.namespaceForeground": settings.palette.purple,
+        "symbolIcon.moduleForeground": settings.palette.blue,
+        "symbolIcon.colorForeground": settings.palette.blue,
+        "symbolIcon.constantForeground": settings.palette.green,
+        "symbolIcon.constructorForeground": settings.palette.blue,
+        "symbolIcon.enumeratorForeground": settings.palette.blue,
+        "symbolIcon.enumeratorMemberForeground": settings.palette.blue,
+        "symbolIcon.eventForeground": settings.palette.blue,
+        "symbolIcon.fieldForeground": settings.palette.blue,
+        "symbolIcon.fileForeground": settings.palette.blue,
+        "symbolIcon.folderForeground": settings.palette.blue,
+        "symbolIcon.functionForeground": settings.palette.blue,
+        "symbolIcon.interfaceForeground": settings.palette.blue,
+        "symbolIcon.keyForeground": settings.palette.blue,
+        "symbolIcon.keywordForeground": settings.palette.blue,
+        "symbolIcon.methodForeground": settings.palette.blue,
+        "symbolIcon.nullForeground": settings.palette.red,
+        "symbolIcon.numberForeground": settings.palette.red,
+        "symbolIcon.objectForeground": settings.palette.blue,
+        "symbolIcon.operatorForeground": settings.palette.blue,
+        "symbolIcon.packageForeground": settings.palette.blue,
+        "symbolIcon.propertyForeground": settings.palette.yellow,
+        "symbolIcon.referenceForeground": settings.palette.blue,
+        "symbolIcon.snippetForeground": settings.palette.blue,
+        "symbolIcon.stringForeground": settings.palette.green,
+        "symbolIcon.structForeground": settings.palette.blue,
+        "symbolIcon.textForeground": settings.palette.green,
+        "symbolIcon.typeParameterForeground": settings.palette.blue,
+        "symbolIcon.unitForeground": settings.palette.blue,
+        "symbolIcon.variableForeground": settings.palette.blue,
       },
       tokenColors: [
         {
@@ -684,17 +684,10 @@ export namespace Theme {
           },
         },
         {
-          name: "Regular Expressions",
-          scope: ["string.regexp"],
-          settings: {
-            foreground: settings.syntax.special,
-          },
-        },
-        {
           name: "Escape Characters",
           scope: ["constant.character.escape"],
           settings: {
-            foreground: settings.syntax.special,
+            foreground: settings.syntax.storage,
           },
         },
         {
@@ -722,9 +715,7 @@ export namespace Theme {
           name: "Punctuation",
           scope: ["punctuation", "meta.brace"],
           settings: {
-            foreground: tinycolor(settings.ui.editorBackground)
-              .lighten(50)
-              .toString(),
+            foreground: settings.ui.foreground,
           },
         },
         {
@@ -745,6 +736,13 @@ export namespace Theme {
           },
         },
         {
+          name: "String - Regex",
+          scope: ["string.regexp"],
+          settings: {
+            foreground: settings.syntax.special,
+          },
+        },
+        {
           name: "String - Template expression",
           scope: ["punctuation.definition.template-expression"],
           settings: {
@@ -760,14 +758,12 @@ export namespace Theme {
         },
         {
           name: "Storage",
-          scope: ["storage"],
-          settings: {
-            foreground: settings.syntax.storage,
-          },
-        },
-        {
-          name: "Language",
-          scope: ["constant.language", "support.type.builtin"],
+          scope: [
+            "storage",
+            "constant.language",
+            "support.type.builtin",
+            "support.function.builtin",
+          ],
           settings: {
             foreground: settings.syntax.storage,
           },
@@ -787,12 +783,27 @@ export namespace Theme {
             foreground: settings.syntax.keywords,
           },
         },
-
         {
-          name: "Variables, Objects",
+          name: "Variables - Class, Entity, Alias, Namespace",
           scope: [
             "variable",
+            "variable.other.readwrite.alias",
+            "meta.class",
+            "meta.attribute entity.name",
+            "meta.definition.property",
+            "entity.name.package",
+            "entity.name.function",
+            "support.function",
+          ],
+          settings: {
+            foreground: settings.syntax.attributes,
+          },
+        },
+        {
+          name: "Variable - Objects, Properties",
+          scope: [
             "meta.object",
+            "variable.object",
             "variable.other.property",
             "variable.other.enummember",
           ],
@@ -801,45 +812,10 @@ export namespace Theme {
           },
         },
         {
-          name: "Variables - Others",
-          scope: ["variable.other"],
-          settings: {
-            foreground: settings.syntax.attributes,
-          },
-        },
-        {
           name: "Variables - Arguments",
           scope: ["meta.parameters variable", "variable.parameter"],
           settings: {
             foreground: settings.syntax.arguments,
-          },
-        },
-        {
-          name: "Method",
-          scope: ["meta.method", "meta.function", "support.function"],
-          settings: {
-            foreground: settings.syntax.attributes,
-          },
-        },
-        {
-          name: "Method - Builtin",
-          scope: ["support.function.builtin"],
-          settings: {
-            foreground: settings.syntax.storage,
-          },
-        },
-        {
-          name: "Class, Entity, Alias, Namespace",
-          scope: [
-            "meta.class",
-            "variable.other.object",
-            "variable.other.readwrite.alias",
-            "meta.attribute entity.name",
-            "entity.name.package",
-            "entity.name.function",
-          ],
-          settings: {
-            foreground: settings.syntax.attributes,
           },
         },
         {
@@ -867,16 +843,13 @@ export namespace Theme {
         },
         {
           name: "Tag - attributes",
-          scope: ["meta.tag.attributes", "meta.attribute"],
+          scope: [
+            "meta.tag.attributes",
+            "meta.attribute",
+            "entity.other.attribute-name",
+          ],
           settings: {
             foreground: tinycolor(settings.syntax.tags).darken(7).toString(),
-          },
-        },
-        {
-          name: "Tag - expression",
-          scope: ["meta.tag.attributes meta.embedded.expression"],
-          settings: {
-            foreground: settings.syntax.attributes,
           },
         },
         {
@@ -900,7 +873,7 @@ export namespace Theme {
           name: "CSS - Properties",
           scope: ["support.type.property-name.css"],
           settings: {
-            foreground: settings.syntax.arguments,
+            foreground: settings.ui.foreground,
           },
         },
         {
@@ -947,7 +920,7 @@ export namespace Theme {
             "support.constant.media-type.media",
           ],
           settings: {
-            foreground: settings.syntax.special,
+            foreground: settings.syntax.storage,
           },
         },
         {
@@ -1019,7 +992,7 @@ export namespace Theme {
           name: "Deleted",
           scope: ["markup.deleted"],
           settings: {
-            foreground: settings.common.red,
+            foreground: settings.palette.red,
           },
         },
         {
@@ -1029,7 +1002,6 @@ export namespace Theme {
             foreground: settings.syntax.special,
           },
         },
-
         {
           name: "Markdown - Plain",
           scope: [
@@ -1073,7 +1045,6 @@ export namespace Theme {
             foreground: `${settings.ui.foreground}AA`,
           },
         },
-
         {
           name: "Markup - Italic",
           scope: ["markup.italic"],
@@ -1214,7 +1185,9 @@ export namespace Theme {
           },
         },
       ],
-      semanticTokenColors: {},
+      semanticTokenColors: {
+        arguments: settings.syntax.arguments,
+      },
       semanticHighlighting: true,
     };
   }
