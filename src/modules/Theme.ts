@@ -542,11 +542,11 @@ export namespace Theme {
         "debugView.stateLabelBackground": settings.ui.accent,
         "debugView.valueChangedHighlight": settings.palette.blue,
 
-        "debugTokenExpression.name": settings.palette.blue,
-        "debugTokenExpression.value": settings.palette.purple,
-        "debugTokenExpression.string": settings.palette.green,
-        "debugTokenExpression.boolean": settings.palette.yellow,
-        "debugTokenExpression.number": settings.palette.yellow,
+        "debugTokenExpression.name": settings.syntax.attributes,
+        "debugTokenExpression.value": settings.ui.foreground,
+        "debugTokenExpression.string": settings.syntax.string,
+        "debugTokenExpression.boolean": settings.syntax.storage,
+        "debugTokenExpression.number": settings.syntax.storage,
         "debugTokenExpression.error": settings.palette.red,
 
         "debugIcon.stopForeground": settings.palette.red,
@@ -556,6 +556,20 @@ export namespace Theme {
         "debugIcon.breakpointForeground": settings.palette.red,
         "debugIcon.breakpointDisabledForeground": `${settings.ui.foreground}AA`,
         "debugIcon.breakpointUnverifiedForeground": `${settings.palette.red}AA`,
+
+        "testing.iconErrored": settings.palette.purple,
+        "testing.iconFailed": settings.palette.red,
+        "testing.iconPassed": settings.palette.green,
+        "testing.runAction": settings.palette.green,
+
+        "testing.iconQueued": settings.palette.blue,
+        "testing.iconUnset": `${settings.ui.foreground}80`,
+        "testing.iconSkipped": settings.palette.yellow,
+
+        "testing.message.error.decorationForeground": settings.palette.red,
+        "testing.message.error.lineBackground": `${settings.palette.red}30`,
+        "testing.message.info.decorationForeground": settings.palette.blue,
+        "testing.message.info.lineBackground": `${settings.palette.blue}30`,
 
         "terminal.background": settings.ui.panelBackground,
         "terminal.foreground": settings.ui.foreground,
