@@ -34,7 +34,7 @@ const generateFiles = async () => {
         "./themes/universum-gray.json",
         Theme.prettify(
           Theme.getSchema({
-            ui: Theme.uiDefault("#181A1F", "#0B97B3"),
+            ui: Theme.uiDefault("#181A1F", "#6D97B0"),
             syntax: Theme.syntaxDefault,
             palette: Theme.paletteDefault,
           })
@@ -44,7 +44,17 @@ const generateFiles = async () => {
         "./themes/universum-green.json",
         Theme.prettify(
           Theme.getSchema({
-            ui: Theme.uiDefault("#0f1d22", "#0B97B3"),
+            ui: Theme.uiDefault("#0f1d22", "#67995F"),
+            syntax: Theme.syntaxDefault,
+            palette: Theme.paletteDefault,
+          })
+        )
+      ),
+      fs.writeFile(
+        "./themes/universum-purple.json",
+        Theme.prettify(
+          Theme.getSchema({
+            ui: Theme.uiDefault("#181A28", "#9173BF"),
             syntax: Theme.syntaxDefault,
             palette: Theme.paletteDefault,
           })

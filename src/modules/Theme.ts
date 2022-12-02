@@ -70,8 +70,8 @@ export namespace Theme {
   }
 
   export function getSchema(settings: Theme.Settings): unknown {
-    const accentForeground = tinycolor(settings.palette.yellow)
-      .lighten(50)
+    const accentForeground = tinycolor(settings.ui.accent)
+      .lighten(45)
       .toString();
 
     const findMatchBackground = tinycolor(settings.palette.yellow)
@@ -90,7 +90,7 @@ export namespace Theme {
         foreground: settings.ui.foreground,
         errorForeground: `${settings.ui.foreground}60`,
         descriptionForeground: `${settings.ui.foreground}80`,
-        focusBorder: "#ffffff00",
+        focusBorder: `${settings.ui.accent}AA`,
         "selection.background": tinycolor(settings.ui.panelBackground)
           .lighten(10)
           .toHexString(),
@@ -116,7 +116,7 @@ export namespace Theme {
           .lighten(5)
           .toHexString(),
 
-        "badge.background": `${settings.ui.accent}A0`,
+        "badge.background": settings.ui.accent,
         "badge.foreground": accentForeground,
 
         "toolbar.activeBackground": tinycolor(settings.ui.panelBackground)
@@ -194,6 +194,7 @@ export namespace Theme {
         "sideBarSectionHeader.border": settings.ui.border,
         "sideBar.dropBackground": `${settings.ui.accent}40`,
 
+        "list.focusAndSelectionOutline": settings.ui.accent,
         "list.dropBackground": `${settings.ui.accent}40`,
         "list.deemphasizedForeground": `${settings.ui.foreground}80`,
         "list.activeSelectionBackground": tinycolor(settings.ui.panelBackground)
@@ -263,7 +264,9 @@ export namespace Theme {
 
         "editor.background": settings.ui.editorBackground,
         "editor.foreground": settings.ui.foreground,
-        "editor.foldBackground": "#11111750",
+        "editor.foldBackground": tinycolor(settings.ui.editorBackground)
+          .lighten(10)
+          .toString(),
         "editorLink.activeForeground": tinycolor(settings.ui.accent)
           .lighten(10)
           .toHexString(),
@@ -432,7 +435,7 @@ export namespace Theme {
         "diffEditorGutter.removedLineBackground": `${settings.palette.red}25`,
         "diffEditorOverview.insertedForeground": `${settings.palette.blue}25`,
         "diffEditorOverview.removedForeground": `${settings.palette.red}25`,
-        "diffEditor.diagonalFill": "#292e42",
+        "diffEditor.diagonalFill": `${settings.palette.red}50`,
 
         "breadcrumb.background": settings.ui.editorBackground,
         "breadcrumbPicker.background": settings.ui.panelBackground,
@@ -451,9 +454,9 @@ export namespace Theme {
         "tab.unfocusedActiveForeground": settings.ui.foreground,
         "tab.unfocusedInactiveForeground": `${settings.ui.foreground}80`,
         "tab.unfocusedHoverForeground": settings.ui.foreground,
-        "tab.activeModifiedBorder": "#1a1b26",
-        "tab.inactiveModifiedBorder": settings.ui.border,
-        "tab.unfocusedActiveBorder": settings.ui.border,
+        "tab.activeModifiedBorder": settings.ui.accent,
+        "tab.inactiveModifiedBorder": `${settings.ui.accent}80`,
+        "tab.unfocusedActiveBorder": `${settings.ui.accent}80`,
         "tab.lastPinnedBorder": settings.ui.border,
 
         "panel.background": settings.ui.panelBackground,
@@ -484,6 +487,11 @@ export namespace Theme {
         "statusBarItem.hoverBackground": "#ffffff10",
         "statusBarItem.prominentBackground": "#00000030",
         "statusBarItem.prominentHoverBackground": "#00000030",
+        "statusBarItem.errorForeground": settings.palette.red,
+        "statusBarItem.warningForeground": settings.palette.yellow,
+
+        "statusBarItem.remoteBackground": settings.ui.accent,
+        "statusBarItem.remoteForeground": accentForeground,
 
         "titleBar.activeForeground": tinycolor(settings.ui.foreground)
           .setAlpha(0.5)
@@ -580,11 +588,12 @@ export namespace Theme {
         "gitDecoration.conflictingResourceForeground": `${settings.palette.purple}DD`,
         "gitDecoration.ignoredResourceForeground": `${settings.ui.foreground}60`,
 
-        "notebook.editorBackground": "#1a1b26",
+        "notebook.editorBackground": settings.ui.editorBackground,
         "notebook.cellEditorBackground": settings.ui.panelBackground,
         "notebook.cellBorderColor": settings.ui.border,
-        "notebook.focusedCellBorder": "#29355a",
-        "notebook.cellStatusBarItemHoverBackground": "#1c1d29",
+        "notebook.focusedCellBorder": settings.ui.accent,
+        "notebook.cellStatusBarItemHoverBackground":
+          settings.ui.panelBackground,
 
         "charts.red": settings.palette.red,
         "charts.blue": settings.palette.blue,
@@ -624,6 +633,10 @@ export namespace Theme {
         "menu.separatorBackground": settings.ui.border,
         "menu.border": settings.ui.border,
 
+        "commandCenter.background": settings.ui.panelBackground,
+        "commandCenter.border": settings.ui.border,
+        "commandCenter.inactiveBorder": settings.ui.border,
+
         "notificationCenterHeader.background": settings.ui.panelBackground,
         "notificationCenterHeader.border": settings.ui.border,
         "notificationToast.border": settings.ui.border,
@@ -634,12 +647,12 @@ export namespace Theme {
         "notificationsWarningIcon.foreground": settings.palette.yellow,
         "notificationsInfoIcon.foreground": settings.palette.yellow,
 
-        "keybindingLabel.foreground": settings.ui.panelBackground,
-        "keybindingLabel.background": settings.ui.foreground,
-        "keybindingLabel.border": settings.ui.foreground,
-        "keybindingLabel.bottomBorder": settings.ui.foreground,
-        "keybindingTable.headerBackground": settings.ui.foreground,
-        "keybindingTable.rowsBackground": settings.ui.foreground,
+        "keybindingLabel.foreground": accentForeground,
+        "keybindingLabel.background": settings.ui.accent,
+        "keybindingLabel.border": settings.ui.accent,
+        "keybindingLabel.bottomBorder": settings.ui.accent,
+        "keybindingTable.headerBackground": settings.ui.accent,
+        "keybindingTable.rowsBackground": settings.ui.accent,
 
         "symbolIcon.arrayForeground": settings.palette.blue,
         "symbolIcon.booleanForeground": settings.palette.blue,

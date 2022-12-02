@@ -27,19 +27,24 @@
         "path": "./themes/universum-main.json"
       },
       {
-        "label": "Universum Gray",
-        "uiTheme": "vs-dark",
-        "path": "./themes/universum-gray.json"
-      },
-      {
-        "label": "Universum Blue",
+        "label": "Universum - Blue",
         "uiTheme": "vs-dark",
         "path": "./themes/universum-blue.json"
       },
       {
-        "label": "Universum Green",
+        "label": "Universum - Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-gray.json"
+      },
+      {
+        "label": "Universum - Green",
         "uiTheme": "vs-dark",
         "path": "./themes/universum-green.json"
+      },
+      {
+        "label": "Universum - Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/universum-purple.json"
       }
     ]
   },
