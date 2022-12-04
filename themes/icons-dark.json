@@ -1,6 +1,9 @@
 {
   "hidesExplorerArrows": true,
   "iconDefinitions": {
+    "file.jest": {
+      "iconPath": "./../src/icons/file.jest.svg"
+    },
     "file.sql": {
       "iconPath": "./../src/icons/file.sql.svg"
     },
@@ -226,6 +229,15 @@
     "file.toml": {
       "iconPath": "./../src/icons/file.toml.svg"
     },
+    "config.settings": {
+      "iconPath": "./../src/icons/config.settings.svg"
+    },
+    "config.tool": {
+      "iconPath": "./../src/icons/config.tool.svg"
+    },
+    "config.env": {
+      "iconPath": "./../src/icons/config.env.svg"
+    },
     "config.npm": {
       "iconPath": "./../src/icons/config.npm.svg"
     },
@@ -276,6 +288,15 @@
     },
     "config.yarn": {
       "iconPath": "./../src/icons/config.yarn.svg"
+    },
+    "config.prettier": {
+      "iconPath": "./../src/icons/config.prettier.svg"
+    },
+    "config.jest": {
+      "iconPath": "./../src/icons/config.jest.svg"
+    },
+    "config.tsconfig": {
+      "iconPath": "./../src/icons/config.tsconfig.svg"
     },
     "folder.test.close": {
       "iconPath": "./../src/icons/folder.test.close.svg"
@@ -346,6 +367,8 @@
   "folder": "_folder_dark",
   "file": "_file_dark",
   "fileExtensions": {
+    "ini": "config.settings",
+    "jest": "file.jest",
     "sql": "file.sql",
     "tf": "file.terraform",
     "json": "file.json",
@@ -490,7 +513,11 @@
     "ecr": "file.cr"
   },
   "fileNames": {
+    "jest.config.js": "config.jest",
+    ".tool-versions": "config.tool",
+    ".env": "config.env",
     "package.json": "config.npm",
+    "package-lock.json": "config.npm",
     ".npmignore": "config.npm",
     ".npmrc": "config.npm",
     ".esformatter": "config.format",
@@ -530,7 +557,9 @@
     ".eslintrc.yml": "config.eslint",
     ".eslintignore": "config.eslint",
     ".babelrc": "config.babel",
-    "yarn.lock": "config.yarn"
+    "yarn.lock": "config.yarn",
+    ".prettierrc.js": "config.prettier",
+    "tsconfig.json": "config.tsconfig"
   },
   "folderNames": {
     ".vscode": "folder.vs.close",
@@ -539,18 +568,14 @@
     "test": "folder.test.close",
     "tests": "folder.test.close",
     "__tests__": "folder.test.close",
-    "node_modules": "folder.js.close",
     "build": "folder.dist.close",
     "bin": "folder.dist.close",
     ".bin": "folder.dist.close",
     "dist": "folder.dist.close",
     "deploy": "folder.dist.close",
     "src": "folder.src.close",
-    "include": "folder.include.close",
     "source": "folder.src.close",
-    "lib": "folder.lib.close",
-    "typings": "folder.ts.close",
-    "types": "folder.ts.close"
+    "lib": "folder.lib.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
@@ -559,18 +584,14 @@
     "test": "folder.test.open",
     "tests": "folder.test.open",
     "__tests__": "folder.test.open",
-    "node_modules": "folder.js.open",
     "build": "folder.dist.open",
     "bin": "folder.dist.open",
     ".bin": "folder.dist.open",
     "dist": "folder.dist.open",
     "deploy": "folder.dist.open",
     "src": "folder.src.open",
-    "include": "folder.include.open",
     "source": "folder.src.open",
-    "lib": "folder.lib.open",
-    "typings": "folder.ts.open",
-    "types": "folder.ts.open"
+    "lib": "folder.lib.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
