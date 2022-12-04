@@ -241,6 +241,9 @@
     "config.npm": {
       "iconPath": "./../src/icons/config.npm.svg"
     },
+    "config.npm-lock": {
+      "iconPath": "./../src/icons/config.npm-lock.svg"
+    },
     "config.git": {
       "iconPath": "./../src/icons/config.git.svg"
     },
@@ -517,7 +520,7 @@
     ".tool-versions": "config.tool",
     ".env": "config.env",
     "package.json": "config.npm",
-    "package-lock.json": "config.npm",
+    "package-lock.json": "config.npm-lock",
     ".npmignore": "config.npm",
     ".npmrc": "config.npm",
     ".esformatter": "config.format",
