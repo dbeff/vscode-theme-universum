@@ -1,1 +1,6 @@
-<svg id="Bases" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.icon-folder{fill:#dcb67a;}</style></defs><title>folder.open</title><g id="_编组_" data-name="&lt;编组&gt;"><path id="_复合路径_" data-name="&lt;复合路径&gt;" class="icon-folder" d="M28,4a2,2,0,0,1,2,2V24a1.92,1.92,0,0,1-2,2V6H16l-2,4H6v6H22l6,10H6L0,16H4V10C4,8,6.47,8,6,8h7l2-4Z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" version="1.1">
+  <polygon fill="none" stroke="#E5C07B" stroke-width="20" points="50,70 150,70 190,30 310,30 310,250 50,250"
+    stroke-linejoin="round" />
+  <polygon fill="#E5C07B" points="0,160 270,160 310,260 40,260" stroke-linejoin="round" />
+</svg>

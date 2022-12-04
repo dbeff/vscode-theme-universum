@@ -565,36 +565,10 @@
     "tsconfig.json": "config.tsconfig"
   },
   "folderNames": {
-    ".vscode": "folder.vs.close",
-    ".git": "folder.git.close",
-    "spec": "folder.test.close",
-    "test": "folder.test.close",
-    "tests": "folder.test.close",
-    "__tests__": "folder.test.close",
-    "build": "folder.dist.close",
-    "bin": "folder.dist.close",
-    ".bin": "folder.dist.close",
-    "dist": "folder.dist.close",
-    "deploy": "folder.dist.close",
-    "src": "folder.src.close",
-    "source": "folder.src.close",
-    "lib": "folder.lib.close"
+    ".vscode": "folder.vs.close"
   },
   "folderNamesExpanded": {
-    ".vscode": "folder.vs.open",
-    ".git": "folder.git.open",
-    "spec": "folder.test.open",
-    "test": "folder.test.open",
-    "tests": "folder.test.open",
-    "__tests__": "folder.test.open",
-    "build": "folder.dist.open",
-    "bin": "folder.dist.open",
-    ".bin": "folder.dist.open",
-    "dist": "folder.dist.open",
-    "deploy": "folder.dist.open",
-    "src": "folder.src.open",
-    "source": "folder.src.open",
-    "lib": "folder.lib.open"
+    ".vscode": "folder.vs.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
