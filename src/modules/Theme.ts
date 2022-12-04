@@ -665,9 +665,9 @@ export namespace Theme {
         "keybindingLabel.background": settings.ui.accent,
         "keybindingLabel.border": settings.ui.accent,
         "keybindingLabel.bottomBorder": settings.ui.accent,
-        "keybindingTable.headerBackground": settings.ui.accent,
-        "keybindingTable.rowsBackground": settings.ui.accent,
-
+        "keybindingTable.headerBackground": settings.ui.panelBackground,
+        "keybindingTable.rowsBackground": settings.ui.editorBackground,
+        
         "symbolIcon.arrayForeground": settings.palette.blue,
         "symbolIcon.booleanForeground": settings.palette.blue,
         "symbolIcon.classForeground": settings.palette.yellow,
