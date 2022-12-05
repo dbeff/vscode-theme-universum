@@ -229,6 +229,9 @@
     "file.toml": {
       "iconPath": "./../src/icons/file.toml.svg"
     },
+    "file.gradle": {
+      "iconPath": "./../src/icons/file.gradle.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -300,6 +303,12 @@
     },
     "config.tsconfig": {
       "iconPath": "./../src/icons/config.tsconfig.svg"
+    },
+    "config.angular": {
+      "iconPath": "./../src/icons/config.angular.svg"
+    },
+    "config.watchman": {
+      "iconPath": "./../src/icons/config.watchman.svg"
     },
     "folder.test.close": {
       "iconPath": "./../src/icons/folder.test.close.svg"
@@ -513,7 +522,8 @@
     "key": "file.key",
     "pem": "file.crt",
     "cr": "file.cr",
-    "ecr": "file.cr"
+    "ecr": "file.cr",
+    "gradle": "file.gradle"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
@@ -562,7 +572,11 @@
     ".babelrc": "config.babel",
     "yarn.lock": "config.yarn",
     ".prettierrc.js": "config.prettier",
-    "tsconfig.json": "config.tsconfig"
+    "tsconfig.json": "config.tsconfig",
+    "angular.json": "config.angular",
+    "gradle.properties": "file.gradle",
+    "gradlew": "file.gradle",
+    ".watchmanconfig": "config.watchman"
   },
   "folderNames": {
     ".vscode": "folder.vs.close"

@@ -1,1 +1,24 @@
-<svg id="Bases" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1{fill:#dcdbdd;}.cls-2{fill:#57aa54;}</style></defs><title>file.jade</title><g id="_编组_" data-name="&lt;编组&gt;"><g id="_编组_2" data-name="&lt;编组&gt;"><polygon id="_路径_" data-name="&lt;路径&gt;" class="cls-1" points="9 11 10.5 12.5 7 16 10.5 19.5 9 21 4 16 9 11"/></g><g id="_编组_3" data-name="&lt;编组&gt;"><polygon id="_路径_2" data-name="&lt;路径&gt;" class="cls-1" points="23 21 21.5 19.5 25 16 21.5 12.5 23 11 28 16 23 21"/></g><g id="_编组_4" data-name="&lt;编组&gt;"><circle id="_路径_3" data-name="&lt;路径&gt;" class="cls-2" cx="16" cy="16" r="5"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <clipPath id="b">
+      <use xlink:href="#a" />
+    </clipPath>
+    <ellipse id="a" cx="160" cy="160" rx="120" ry="100" />
+  </defs>
+  <use xlink:href="#a" fill="#efcca3" />
+  <g fill="#56332b">
+    <rect width="140" height="120" x="90" y="155" clip-path="url(#b)" rx="70" ry="50" />
+    <ellipse cx="160" cy="160" rx="20" ry="15" />
+    <path d="M90 78 0 130l50 60zM230 78l90 52-50 60z" />
+  </g>
+  <circle cx="95" cy="145" r="20" />
+  <circle cx="225" cy="145" r="20" />
+  <g fill="#fff">
+    <circle cx="105" cy="140" r="5" />
+    <circle cx="215" cy="140" r="5" />
+  </g>
+  <g stroke="#000" stroke-width="10">
+    <path fill="none" d="M130 220q30-60 60 0" />
+    <path d="M160 160v30" />
+  </g>
+</svg>
