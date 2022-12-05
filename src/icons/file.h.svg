@@ -1,1 +1,3 @@
-<svg id="Bases" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none;stroke:#9b4f96;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>file.h</title><g id="_编组_" data-name="&lt;编组&gt;"><path id="_复合路径_" data-name="&lt;复合路径&gt;" class="cls-1" d="M16,16H12v4H8V16H4V12H8V8h4v4h4Zm12,0H24V12H20v4H16v4h4v4h4V20h4Z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path fill="#0292E6" d="M16.745 19.818h-3.007v-5.882q0-2.381-1.736-2.381-.869 0-1.438.663-.56.662-.56 1.718v5.882H6.988V4.533h3.016v6.508h.037q1.186-1.802 3.193-1.802 3.511 0 3.511 4.239z" aria-label="h"/>
+</svg>
