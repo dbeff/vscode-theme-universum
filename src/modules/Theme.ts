@@ -272,7 +272,7 @@ export namespace Theme {
           .toHexString(),
 
         "editor.selectionBackground": tinycolor(settings.ui.editorBackground)
-          .lighten(10)
+          .lighten(15)
           .toHexString(),
         "editor.inactiveSelectionBackground": tinycolor(
           settings.ui.editorBackground
