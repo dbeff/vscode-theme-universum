@@ -272,12 +272,12 @@ export namespace Theme {
           .toHexString(),
 
         "editor.selectionBackground": tinycolor(settings.ui.editorBackground)
-          .lighten(7)
+          .lighten(10)
           .toHexString(),
         "editor.inactiveSelectionBackground": tinycolor(
           settings.ui.editorBackground
         )
-          .lighten(3)
+          .lighten(5)
           .toHexString(),
 
         "editor.findMatchBackground": findMatchBackground,
@@ -304,7 +304,7 @@ export namespace Theme {
         "editor.selectionHighlightBackground": tinycolor(
           settings.ui.editorBackground
         )
-          .lighten(7)
+          .lighten(15)
           .toHexString(),
 
         "editorCursor.foreground": settings.ui.foreground,
