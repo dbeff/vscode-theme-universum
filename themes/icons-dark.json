@@ -232,6 +232,9 @@
     "file.gradle": {
       "iconPath": "./../src/icons/file.gradle.svg"
     },
+    "file.jupyter": {
+      "iconPath": "./../src/icons/file.jupyter.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -523,7 +526,8 @@
     "pem": "file.crt",
     "cr": "file.cr",
     "ecr": "file.cr",
-    "gradle": "file.gradle"
+    "gradle": "file.gradle",
+    "ipynb": "file.jupyter"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
