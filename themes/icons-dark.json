@@ -235,6 +235,9 @@
     "file.jupyter": {
       "iconPath": "./../src/icons/file.jupyter.svg"
     },
+    "file.bazel": {
+      "iconPath": "./../src/icons/file.bazel.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -312,6 +315,9 @@
     },
     "config.watchman": {
       "iconPath": "./../src/icons/config.watchman.svg"
+    },
+    "config.buckbuild": {
+      "iconPath": "./../src/icons/config.buckbuild.svg"
     },
     "folder.test.close": {
       "iconPath": "./../src/icons/folder.test.close.svg"
@@ -425,6 +431,7 @@
     "d.ts": "file.d.ts",
     "vue": "file.vue",
     "xml": "file.xml",
+    "iml": "file.xml",
     "coffee": "file.coffee",
     "litcoffee": "file.coffee",
     "ex": "file.elixir",
@@ -523,11 +530,13 @@
     "crt": "file.crt",
     "der": "file.crt",
     "key": "file.key",
+    "keystore": "file.key",
     "pem": "file.crt",
     "cr": "file.cr",
     "ecr": "file.cr",
     "gradle": "file.gradle",
-    "ipynb": "file.jupyter"
+    "ipynb": "file.jupyter",
+    "bzl": "file.bazel"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
@@ -580,7 +589,8 @@
     "angular.json": "config.angular",
     "gradle.properties": "file.gradle",
     "gradlew": "file.gradle",
-    ".watchmanconfig": "config.watchman"
+    ".watchmanconfig": "config.watchman",
+    ".buckconfig": "config.buckbuild"
   },
   "folderNames": {
     ".vscode": "folder.vs.close"
