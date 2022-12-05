@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" version="1.1">
-  <polygon fill="none" stroke="#4D9BE9" stroke-width="20" points="50,70 150,70 190,30 310,30 310,250 50,250"
-    stroke-linejoin="round" />
-  <polygon fill="#4D9BE9" points="0,160 270,160 310,260 40,260" stroke-linejoin="round" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path fill="#4D9BE9"
+    d="M28 4a2 2 0 0 1 2 2v18a1.92 1.92 0 0 1-2 2V6H16l-2 4H6v6h16l6 10H6L0 16h4v-6c0-2 2.47-2 2-2h7l2-4Z" />
 </svg>
