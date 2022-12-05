@@ -432,6 +432,7 @@
     "vue": "file.vue",
     "xml": "file.xml",
     "iml": "file.xml",
+    "plist": "file.xml",
     "coffee": "file.coffee",
     "litcoffee": "file.coffee",
     "ex": "file.elixir",
