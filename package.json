@@ -3,7 +3,7 @@
   "displayName": "Universum Theme",
   "description": "Universum Theme for VS Code",
   "repository": "https://github.com/dbeff/vscode-theme-universum",
-  "version": "1.0.47",
+  "version": "1.0.48",
   "icon": "resources/logo.png",
   "publisher": "dbeff",
   "categories": [
