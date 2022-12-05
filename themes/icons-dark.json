@@ -591,7 +591,9 @@
     "gradle.properties": "file.gradle",
     "gradlew": "file.gradle",
     ".watchmanconfig": "config.watchman",
-    ".buckconfig": "config.buckbuild"
+    ".buckconfig": "config.buckbuild",
+    "Podfile": "file.ruby",
+    "Podfile.lock": "file.ruby"
   },
   "folderNames": {
     ".vscode": "folder.vs.close"
