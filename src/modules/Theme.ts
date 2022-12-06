@@ -667,7 +667,7 @@ export namespace Theme {
         "keybindingLabel.bottomBorder": settings.ui.accent,
         "keybindingTable.headerBackground": settings.ui.panelBackground,
         "keybindingTable.rowsBackground": settings.ui.editorBackground,
-        
+
         "symbolIcon.arrayForeground": settings.palette.blue,
         "symbolIcon.booleanForeground": settings.palette.blue,
         "symbolIcon.classForeground": settings.palette.yellow,
@@ -856,16 +856,14 @@ export namespace Theme {
           name: "Tag - Name",
           scope: ["meta.tag entity.name.tag"],
           settings: {
-            foreground: tinycolor(settings.syntax.tags)
-              .brighten(5)
-              .toHexString(),
+            foreground: settings.syntax.tags,
           },
         },
         {
           name: "Tag - Markup",
           scope: ["meta.tag punctuation.definition.tag"],
           settings: {
-            foreground: tinycolor(settings.syntax.tags).darken(10).toString(),
+            foreground: tinycolor(settings.syntax.tags).darken(15).toString(),
           },
         },
         {
@@ -876,7 +874,7 @@ export namespace Theme {
             "entity.other.attribute-name",
           ],
           settings: {
-            foreground: tinycolor(settings.syntax.tags).darken(7).toString(),
+            foreground: tinycolor(settings.syntax.tags).darken(10).toString(),
           },
         },
         {

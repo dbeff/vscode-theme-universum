@@ -113,7 +113,7 @@
     "editor.foreground": "#a5cad7",
     "editor.foldBackground": "#244450",
     "editorLink.activeForeground": "#84ae7d",
-    "editor.selectionBackground": "#244450",
+    "editor.selectionBackground": "#2c5362",
     "editor.inactiveSelectionBackground": "#1c353f",
     "editor.findMatchBackground": "#e5c07b33",
     "editor.findMatchBorder": "#e5c07b",
@@ -562,14 +562,14 @@
       "name": "Tag - Name",
       "scope": ["meta.tag entity.name.tag"],
       "settings": {
-        "foreground": "#1bcff3"
+        "foreground": "#0EC2E6"
       }
     },
     {
       "name": "Tag - Markup",
       "scope": ["meta.tag punctuation.definition.tag"],
       "settings": {
-        "foreground": "#0b99b6"
+        "foreground": "#0a859e"
       }
     },
     {
@@ -580,7 +580,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#0ca6c4"
+        "foreground": "#0b99b6"
       }
     },
     {

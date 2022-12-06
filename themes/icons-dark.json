@@ -238,6 +238,9 @@
     "file.bazel": {
       "iconPath": "./../src/icons/file.bazel.svg"
     },
+    "file.dart": {
+      "iconPath": "./../src/icons/file.dart.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -540,7 +543,8 @@
     "ecr": "file.cr",
     "gradle": "file.gradle",
     "ipynb": "file.jupyter",
-    "bzl": "file.bazel"
+    "bzl": "file.bazel",
+    "dart": "file.dart"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
