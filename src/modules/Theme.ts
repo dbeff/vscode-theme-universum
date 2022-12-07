@@ -820,6 +820,7 @@ export namespace Theme {
             "meta.definition.property",
             "entity.name.package",
             "entity.name.function",
+            "entity.name.type",
             "support.function",
           ],
           settings: {
