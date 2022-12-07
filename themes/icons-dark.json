@@ -1,6 +1,9 @@
 {
   "hidesExplorerArrows": true,
   "iconDefinitions": {
+    "_file_dark": {
+      "iconPath": "./../src/icons/file.svg"
+    },
     "file.jest": {
       "iconPath": "./../src/icons/file.jest.svg"
     },
@@ -322,6 +325,9 @@
     "config.buckbuild": {
       "iconPath": "./../src/icons/config.buckbuild.svg"
     },
+    "config.tailwind": {
+      "iconPath": "./../src/icons/config.tailwind.svg"
+    },
     "folder.test.close": {
       "iconPath": "./../src/icons/folder.test.close.svg"
     },
@@ -382,9 +388,6 @@
     },
     "_folder_open_dark": {
       "iconPath": "./../src/icons/folder.open.svg"
-    },
-    "_file_dark": {
-      "iconPath": "./../src/icons/file.svg"
     }
   },
   "folderExpanded": "_folder_open_dark",
@@ -600,7 +603,8 @@
     ".watchmanconfig": "config.watchman",
     ".buckconfig": "config.buckbuild",
     "Podfile": "file.ruby",
-    "Podfile.lock": "file.ruby"
+    "Podfile.lock": "file.ruby",
+    "tailwind.config.js": "config.tailwind"
   },
   "folderNames": {
     ".vscode": "folder.vs.close"
