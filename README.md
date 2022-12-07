@@ -24,15 +24,15 @@ Carefully selected icons with custom colors to match theme in the best way possi
 
 Background `#1e2031` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/1e2031?style=circle'/> 
 
-Keywords `#e65c75 ` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/e65c75?style=circle'/> 
+Keywords `#e65c75` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/e65c75?style=circle'/> 
 
-Storage `#0EC2E6 ` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/0EC2E6?style=circle'/> 
+Storage `#0EC2E6` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/0EC2E6?style=circle'/> 
 
-Attributes `#E5C07B ` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/E5C07B?style=circle'/> 
+Attributes `#E5C07B` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/E5C07B?style=circle'/> 
 
-String `#88CC7E ` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/88CC7E?style=circle'/> 
+String `#88CC7E` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/88CC7E?style=circle'/> 
 
-Arguments `#BF98E6 ` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/BF98E6?style=circle'/> 
+Arguments `#BF98E6` <img valign='middle' alt='background' src='https://readme-swatches.vercel.app/BF98E6?style=circle'/> 
 
 ## Font
 
