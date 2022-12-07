@@ -51,7 +51,7 @@
       {
         "id": "universum-dark",
         "label": "Universum icons for Visual Studio Code",
-        "path": "./themes/icons-dark.json"
+        "path": "./themes/icons.json"
       }
     ]
   },

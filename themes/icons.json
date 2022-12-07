@@ -328,6 +328,9 @@
     "config.tailwind": {
       "iconPath": "./../src/icons/config.tailwind.svg"
     },
+    "config.robots": {
+      "iconPath": "./../src/icons/config.robots.svg"
+    },
     "folder.test.close": {
       "iconPath": "./../src/icons/folder.test.close.svg"
     },
@@ -509,6 +512,7 @@
     "tiff": "file.image",
     "psd": "file.image",
     "psb": "file.image",
+    "ico": "file.image",
     "ttf": "file.font",
     "otf": "file.font",
     "woff": "file.font",
@@ -604,7 +608,8 @@
     ".buckconfig": "config.buckbuild",
     "Podfile": "file.ruby",
     "Podfile.lock": "file.ruby",
-    "tailwind.config.js": "config.tailwind"
+    "tailwind.config.js": "config.tailwind",
+    "robots.txt": "config.robots"
   },
   "folderNames": {
     ".vscode": "folder.vs.close"
