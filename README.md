@@ -23,14 +23,14 @@ Carefully selected icons with custom colors to match theme in the best way possi
 ![Colors](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/colors.png)
 
 
-| Syntax     | Hex       | HSL              | Sample                                                                                               |
-| ---------- | --------- | ---------------- | ---------------------------------------------------------------------------------------------------- |
-| Background | `#1e2031` | hsl(234, 24, 15) | <img valign='middle' alt='Background' src='https://readme-swatches.vercel.app/1e2031?style=circle'/> |
-| Keywords   | `#e65c75` | hsl(349, 73, 63) | <img valign='middle' alt='Keywords' src='https://readme-swatches.vercel.app/e65c75?style=circle'/>   |
-| Storage    | `#0EC2E6` | hsl(190, 89, 48) | <img valign='middle' alt='Storage' src='https://readme-swatches.vercel.app/0EC2E6?style=circle'/>    |
-| Attributes | `#E5C07B` | hsl(39, 67, 69)  | <img valign='middle' alt='Attributes' src='https://readme-swatches.vercel.app/E5C07B?style=circle'/> |
-| String     | `#88CC7E` | hsl(112, 43, 65) | <img valign='middle' alt='String' src='https://readme-swatches.vercel.app/88CC7E?style=circle'/>     |
-| Arguments  | `#BF98E6` | hsl(270, 61, 75) | <img valign='middle' alt='Arguments' src='https://readme-swatches.vercel.app/BF98E6?style=circle'/>  |
+| Syntax     | Hex       | HSL           | Sample                                                                                               |
+| ---------- | --------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| Background | `#1e2031` | `234, 24, 15` | <img valign='middle' alt='Background' src='https://readme-swatches.vercel.app/1e2031?style=circle'/> |
+| Keywords   | `#e65c75` | `349, 73, 63` | <img valign='middle' alt='Keywords' src='https://readme-swatches.vercel.app/e65c75?style=circle'/>   |
+| Storage    | `#0EC2E6` | `190, 89, 48` | <img valign='middle' alt='Storage' src='https://readme-swatches.vercel.app/0EC2E6?style=circle'/>    |
+| Attributes | `#E5C07B` | `39, 67, 69`  | <img valign='middle' alt='Attributes' src='https://readme-swatches.vercel.app/E5C07B?style=circle'/> |
+| String     | `#88CC7E` | `112, 43, 65` | <img valign='middle' alt='String' src='https://readme-swatches.vercel.app/88CC7E?style=circle'/>     |
+| Arguments  | `#BF98E6` | `270, 61, 75` | <img valign='middle' alt='Arguments' src='https://readme-swatches.vercel.app/BF98E6?style=circle'/>  |
 
 
 ## Font
