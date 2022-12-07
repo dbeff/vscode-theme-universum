@@ -847,7 +847,7 @@ export namespace Theme {
         },
         {
           name: "Type",
-          scope: ["entity.name.type", "support.type"],
+          scope: ["support.type", "meta.type", "meta.enum", "meta.interface"],
           settings: {
             foreground: settings.syntax.attributes,
           },
@@ -1212,6 +1212,9 @@ export namespace Theme {
       ],
       semanticTokenColors: {
         arguments: settings.syntax.arguments,
+        // Experimenting with semantic tokens
+        // "variable.defaultLibrary": settings.syntax.storage,
+        // "method.defaultLibrary": settings.syntax.storage,
       },
       semanticHighlighting: true,
     };

@@ -553,7 +553,7 @@
     },
     {
       "name": "Type",
-      "scope": ["entity.name.type", "support.type"],
+      "scope": ["support.type", "meta.type", "meta.enum", "meta.interface"],
       "settings": {
         "foreground": "#E5C07B"
       }
