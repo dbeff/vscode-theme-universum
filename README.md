@@ -13,10 +13,10 @@ Carefully selected icons with custom colors to match theme in the best way possi
 
 Inspired by:
 
-[Bearded Icons](https://github.com/BeardedBear/bearded-icons)
-[Icons](https://github.com/tal7aouy/vscode-icons)
-[Nomo Dark](https://github.com/be5invis/vscode-iconset)
-[Moxer](https://github.com/moxer-theme/moxer-icons-code)
+- [Bearded Icons](https://github.com/BeardedBear/bearded-icons)
+- [Icons](https://github.com/tal7aouy/vscode-icons)
+- [Nomo Dark](https://github.com/be5invis/vscode-iconset)
+- [Moxer](https://github.com/moxer-theme/moxer-icons-code)
 
 ## Colors
 
