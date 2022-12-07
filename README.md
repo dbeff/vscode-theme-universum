@@ -3,7 +3,7 @@
 
 ![Screenshot](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/screenshot.png)
 
-After using several themes for Visual Code I was never satisfied until I used [Plastic](https://plastictheme.com/). It's clean simple and helped me a lot to read the code and detect the syntax quickly and consistently. However as I like to customize things in order to hopefully improve our development experience I decided to create this theme taking in consideration not only the syntax but also the editor interface keeping both consistent and very satisfying to the eye.
+After using several themes for Visual Code I was never satisfied until I used [Plastic](https://plastictheme.com/). It's clean simple and helped me a lot to read the code and detect the syntax quickly and consistently. However as I like to customize things in order to hopefully improve our development experience I decided to create this theme taking in consideration not only the syntax but also the editor interface keeping both consistent and very pleasing to the eye.
 
 ## Icons
 
