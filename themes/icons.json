@@ -244,6 +244,9 @@
     "file.dart": {
       "iconPath": "./../src/icons/file.dart.svg"
     },
+    "file.pdf": {
+      "iconPath": "./../src/icons/file.pdf.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -385,7 +388,6 @@
     "folder.ts.open": {
       "iconPath": "./../src/icons/folder.ts.open.svg"
     },
-
     "_folder_dark": {
       "iconPath": "./../src/icons/folder.close.svg"
     },
@@ -551,7 +553,8 @@
     "gradle": "file.gradle",
     "ipynb": "file.jupyter",
     "bzl": "file.bazel",
-    "dart": "file.dart"
+    "dart": "file.dart",
+    "pdf": "file.pdf"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
@@ -567,6 +570,7 @@
     ".vscodeignore": "config.vs",
     ".gitignore": "config.git",
     ".gitattributes": "config.git",
+    ".gitconfig": "config.git",
     ".travis.yml": "config.travis",
     "appveyor.yml": "config.appveyor",
     "licence": "config.license",
@@ -577,9 +581,6 @@
     ".editorconfig": "config.editorconfig",
     "readme.md": "file.markdown",
     "makefile": "config.makefile",
-    "readme": "file.text",
-    "install": "file.text",
-    "releases": "file.text",
     ".bowerrc": "config.bower",
     "bower.json": "config.bower",
     "dockerfile": "config.docker",
@@ -616,10 +617,18 @@
     "robots.txt": "config.robots"
   },
   "folderNames": {
-    ".vscode": "folder.vs.close"
+    ".vscode": "folder.vs.close",
+    "source": "folder.src.close",
+    "src": "folder.src.close",
+    "__tests__": "folder.test.close",
+    ".git": "folder.git.close"
   },
   "folderNamesExpanded": {
-    ".vscode": "folder.vs.open"
+    ".vscode": "folder.vs.open",
+    "source": "folder.src.open",
+    "src": "folder.src.open",
+    "__tests__": "folder.test.open",
+    ".git": "folder.git.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
