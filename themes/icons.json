@@ -644,7 +644,11 @@
     "e2e": "folder.test.close",
     ".git": "folder.git.close",
     ".github": "folder.github.close",
-    "node_modules": "folder.node.close"
+    "node_modules": "folder.node.close",
+    "dist": "folder.dist.close",
+    "build": "folder.dist.close",
+    "lib": "folder.lib.close",
+    "modules": "folder.lib.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
@@ -654,7 +658,11 @@
     "e2e": "folder.test.open",
     ".git": "folder.git.open",
     ".github": "folder.github.open",
-    "node_modules": "folder.node.open"
+    "node_modules": "folder.node.open",
+    "dist": "folder.dist.open",
+    "build": "folder.dist.open",
+    "lib": "folder.lib.open",
+    "modules": "folder.lib.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
