@@ -247,6 +247,9 @@
     "file.pdf": {
       "iconPath": "./../src/icons/file.pdf.svg"
     },
+    "file.dmg": {
+      "iconPath": "./../src/icons/file.dmg.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -352,6 +355,12 @@
     "folder.git.open": {
       "iconPath": "./../src/icons/folder.git.open.svg"
     },
+    "folder.github.close": {
+      "iconPath": "./../src/icons/folder.github.close.svg"
+    },
+    "folder.github.open": {
+      "iconPath": "./../src/icons/folder.github.open.svg"
+    },
     "folder.js.close": {
       "iconPath": "./../src/icons/folder.js.close.svg"
     },
@@ -387,6 +396,12 @@
     },
     "folder.ts.open": {
       "iconPath": "./../src/icons/folder.ts.open.svg"
+    },
+    "folder.node.close": {
+      "iconPath": "./../src/icons/folder.node.close.svg"
+    },
+    "folder.node.open": {
+      "iconPath": "./../src/icons/folder.node.open.svg"
     },
     "_folder_dark": {
       "iconPath": "./../src/icons/folder.close.svg"
@@ -554,7 +569,8 @@
     "ipynb": "file.jupyter",
     "bzl": "file.bazel",
     "dart": "file.dart",
-    "pdf": "file.pdf"
+    "pdf": "file.pdf",
+    "dmg": "file.dmg"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
@@ -614,21 +630,31 @@
     "Podfile": "file.ruby",
     "Podfile.lock": "file.ruby",
     "tailwind.config.js": "config.tailwind",
-    "robots.txt": "config.robots"
+    "robots.txt": "config.robots",
+    ".zshrc": "file.shell",
+    ".zprofile": "file.shell",
+    ".bash_profile": "file.shell",
+    ".bashrc": "file.shell"
   },
   "folderNames": {
     ".vscode": "folder.vs.close",
     "source": "folder.src.close",
     "src": "folder.src.close",
     "__tests__": "folder.test.close",
-    ".git": "folder.git.close"
+    "e2e": "folder.test.close",
+    ".git": "folder.git.close",
+    ".github": "folder.github.close",
+    "node_modules": "folder.node.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
     "source": "folder.src.open",
     "src": "folder.src.open",
     "__tests__": "folder.test.open",
-    ".git": "folder.git.open"
+    "e2e": "folder.test.open",
+    ".git": "folder.git.open",
+    ".github": "folder.github.open",
+    "node_modules": "folder.node.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
