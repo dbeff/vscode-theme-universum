@@ -562,6 +562,7 @@
     "der": "file.crt",
     "key": "file.key",
     "keystore": "file.key",
+    "token": "file.key",
     "pem": "file.crt",
     "cr": "file.cr",
     "ecr": "file.cr",
