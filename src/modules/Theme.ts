@@ -575,7 +575,7 @@ export namespace Theme {
         "terminal.foreground": settings.ui.foreground,
         "terminal.selectionBackground": `${settings.ui.foreground}20`,
 
-        "terminal.ansiBlack": `${settings.ui.foreground}20`,
+        "terminal.ansiBlack": settings.ui.editorBackground,
         "terminal.ansiRed": settings.palette.red,
         "terminal.ansiGreen": settings.palette.green,
         "terminal.ansiYellow": settings.palette.yellow,
