@@ -403,6 +403,12 @@
     "folder.node.open": {
       "iconPath": "./../src/icons/folder.node.open.svg"
     },
+    "folder.docs.close": {
+      "iconPath": "./../src/icons/folder.docs.close.svg"
+    },
+    "folder.docs.open": {
+      "iconPath": "./../src/icons/folder.docs.open.svg"
+    },
     "_folder_dark": {
       "iconPath": "./../src/icons/folder.close.svg"
     },
@@ -651,7 +657,8 @@
     "lib": "folder.lib.close",
     "utils": "folder.lib.close",
     "common": "folder.lib.close",
-    "modules": "folder.lib.close"
+    "modules": "folder.lib.close",
+    "docs": "folder.docs.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
@@ -667,7 +674,8 @@
     "lib": "folder.lib.open",
     "utils": "folder.lib.open",
     "common": "folder.lib.open",
-    "modules": "folder.lib.open"
+    "modules": "folder.lib.open",
+    "docs": "folder.docs.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
