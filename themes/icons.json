@@ -139,6 +139,9 @@
     "file.image": {
       "iconPath": "./../src/icons/file.image.svg"
     },
+    "file.svg": {
+      "iconPath": "./../src/icons/file.svg.svg"
+    },
     "file.font": {
       "iconPath": "./../src/icons/file.font.svg"
     },
@@ -250,6 +253,9 @@
     "file.dmg": {
       "iconPath": "./../src/icons/file.dmg.svg"
     },
+    "file.svelte": {
+      "iconPath": "./../src/icons/file.svelte.svg"
+    },
     "config.settings": {
       "iconPath": "./../src/icons/config.settings.svg"
     },
@@ -336,6 +342,12 @@
     },
     "config.robots": {
       "iconPath": "./../src/icons/config.robots.svg"
+    },
+    "config.metro": {
+      "iconPath": "./../src/icons/config.metro.svg"
+    },
+    "config.vite": {
+      "iconPath": "./../src/icons/config.vite.svg"
     },
     "folder.test.close": {
       "iconPath": "./../src/icons/folder.test.close.svg"
@@ -530,12 +542,12 @@
     "jpeg": "file.image",
     "gif": "file.image",
     "png": "file.image",
-    "svg": "file.image",
     "tif": "file.image",
     "tiff": "file.image",
     "psd": "file.image",
     "psb": "file.image",
     "ico": "file.image",
+    "svg": "file.svg",
     "ttf": "file.font",
     "otf": "file.font",
     "woff": "file.font",
@@ -577,7 +589,8 @@
     "bzl": "file.bazel",
     "dart": "file.dart",
     "pdf": "file.pdf",
-    "dmg": "file.dmg"
+    "dmg": "file.dmg",
+    "svelte": "file.svelte"
   },
   "fileNames": {
     "jest.config.js": "config.jest",
@@ -641,7 +654,10 @@
     ".zshrc": "file.shell",
     ".zprofile": "file.shell",
     ".bash_profile": "file.shell",
-    ".bashrc": "file.shell"
+    ".bashrc": "file.shell",
+    "svelte.config.js": "file.svelte",
+    "metro.config.js": "config.metro",
+    "vite.config.js": "config.vite"
   },
   "folderNames": {
     ".vscode": "folder.vs.close",
