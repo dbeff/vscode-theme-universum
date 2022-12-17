@@ -1,0 +1,12 @@
+<svg stroke-miterlimit="10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+  xmlns:vectornator="http://vectornator.io" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+  <clipPath id="prefix__a">
+    <path d="M0 0h32v32H0z" />
+  </clipPath>
+  <g clip-path="url(#prefix__a)" vectornator:layerName="Untitled">
+    <path
+      d="M15 4.031l-2 4s-7-.01-7 0c-1.173 0-2 .81-2 2v6H0l6 10h10.031V21a3 3 0 013-3h4.157L22 16.031H6v-6h8l2-4h12V18h2V6.031a2 2 0 00-2-2H15z"
+      fill="#e5c07b" />
+    <path d="M19.029 25.148h10.953v2.68H19.029v-2.68zm6.816-4.137v10.953h-2.68V21.011h2.68z" fill="#e65c75" />
+  </g>
+</svg>

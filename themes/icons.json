@@ -421,6 +421,24 @@
     "folder.docs.open": {
       "iconPath": "./../src/icons/folder.docs.open.svg"
     },
+    "folder.public.close": {
+      "iconPath": "./../src/icons/folder.public.close.svg"
+    },
+    "folder.public.open": {
+      "iconPath": "./../src/icons/folder.public.open.svg"
+    },
+    "folder.assets.close": {
+      "iconPath": "./../src/icons/folder.assets.close.svg"
+    },
+    "folder.assets.open": {
+      "iconPath": "./../src/icons/folder.assets.open.svg"
+    },
+    "folder.components.close": {
+      "iconPath": "./../src/icons/folder.components.close.svg"
+    },
+    "folder.components.open": {
+      "iconPath": "./../src/icons/folder.components.open.svg"
+    },
     "_folder_dark": {
       "iconPath": "./../src/icons/folder.close.svg"
     },
@@ -670,11 +688,17 @@
     "node_modules": "folder.node.close",
     "dist": "folder.dist.close",
     "build": "folder.dist.close",
+    "bin": "folder.dist.close",
     "lib": "folder.lib.close",
     "utils": "folder.lib.close",
     "common": "folder.lib.close",
     "modules": "folder.lib.close",
-    "docs": "folder.docs.close"
+    "docs": "folder.docs.close",
+    "public": "folder.public.close",
+    "include": "folder.include.close",
+    "assets": "folder.assets.close",
+    "res": "folder.assets.close",
+    "components": "folder.components.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
@@ -687,11 +711,17 @@
     "node_modules": "folder.node.open",
     "dist": "folder.dist.open",
     "build": "folder.dist.open",
+    "bin": "folder.dist.open",
     "lib": "folder.lib.open",
     "utils": "folder.lib.open",
     "common": "folder.lib.open",
     "modules": "folder.lib.open",
-    "docs": "folder.docs.open"
+    "docs": "folder.docs.open",
+    "public": "folder.public.open",
+    "include": "folder.include.open",
+    "assets": "folder.assets.open",
+    "res": "folder.assets.open",
+    "components": "folder.components.close"
   },
   "languageIds": {
     "objective-c": "file.objc",
