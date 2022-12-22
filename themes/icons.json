@@ -203,12 +203,34 @@
     "folder.storage.open": {
       "iconPath": "./../src/icons/folder.storage.open.svg"
     },
-    "folder.logs.close": {
-      "iconPath": "./../src/icons/folder.logs.close.svg"
+    "folder.logs.close": { "iconPath": "./../src/icons/folder.logs.close.svg" },
+    "folder.logs.open": { "iconPath": "./../src/icons/folder.logs.open.svg" },
+    "folder.storybook.close": {
+      "iconPath": "./../src/icons/folder.storybook.close.svg"
     },
-    "folder.logs.open": {
-      "iconPath": "./../src/icons/folder.logs.open.svg"
+    "folder.storybook.open": {
+      "iconPath": "./../src/icons/folder.storybook.open.svg"
     },
+    "folder.script.close": {
+      "iconPath": "./../src/icons/folder.script.close.svg"
+    },
+    "folder.script.open": {
+      "iconPath": "./../src/icons/folder.script.open.svg"
+    },
+    "folder.style.close": {
+      "iconPath": "./../src/icons/folder.style.close.svg"
+    },
+    "folder.style.open": { "iconPath": "./../src/icons/folder.style.open.svg" },
+    "folder.docker.close": {
+      "iconPath": "./../src/icons/folder.docker.close.svg"
+    },
+    "folder.docker.open": {
+      "iconPath": "./../src/icons/folder.docker.open.svg"
+    },
+    "folder.font.close": { "iconPath": "./../src/icons/folder.font.close.svg" },
+    "folder.font.open": { "iconPath": "./../src/icons/folder.font.open.svg" },
+    "folder.api.close": { "iconPath": "./../src/icons/folder.api.close.svg" },
+    "folder.api.open": { "iconPath": "./../src/icons/folder.api.open.svg" },
     "_folder_dark": { "iconPath": "./../src/icons/folder.close.svg" },
     "_folder_open_dark": { "iconPath": "./../src/icons/folder.open.svg" }
   },
@@ -458,6 +480,7 @@
     "dist": "folder.dist.close",
     "build": "folder.dist.close",
     "bin": "folder.dist.close",
+    "artifacts": "folder.dist.close",
     "lib": "folder.lib.close",
     "utils": "folder.lib.close",
     "common": "folder.lib.close",
@@ -465,6 +488,8 @@
     "docs": "folder.docs.close",
     "pages": "folder.page.close",
     "public": "folder.public.close",
+    "client": "folder.public.close",
+    "web": "folder.public.close",
     "include": "folder.include.close",
     "assets": "folder.assets.close",
     "res": "folder.assets.close",
@@ -483,9 +508,21 @@
     "router": "folder.router.close",
     "routes": "folder.router.close",
     "navigation": "folder.router.close",
+    "proxy": "folder.router.close",
     "theme": "folder.theme.close",
     "themes": "folder.theme.close",
-    "logs": "folder.logs.close"
+    "logs": "folder.logs.close",
+    "storybook": "folder.storybook.close",
+    "script": "folder.script.close",
+    "scripts": "folder.script.close",
+    "style": "folder.style.close",
+    "styles": "folder.style.close",
+    "docker": "folder.docker.close",
+    "font": "folder.font.close",
+    "fonts": "folder.font.close",
+    "api": "folder.api.close",
+    "service": "folder.api.close",
+    "services": "folder.api.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
@@ -508,6 +545,8 @@
     "docs": "folder.docs.open",
     "pages": "folder.page.open",
     "public": "folder.public.open",
+    "client": "folder.public.open",
+    "web": "folder.public.open",
     "include": "folder.include.open",
     "assets": "folder.assets.open",
     "res": "folder.assets.open",
@@ -526,9 +565,21 @@
     "router": "folder.router.open",
     "routes": "folder.router.open",
     "navigation": "folder.router.open",
+    "proxy": "folder.router.open",
     "theme": "folder.theme.open",
     "themes": "folder.theme.open",
-    "logs": "folder.logs.open"
+    "logs": "folder.logs.open",
+    "storybook": "folder.storybook.open",
+    "script": "folder.script.open",
+    "scripts": "folder.script.open",
+    "style": "folder.style.open",
+    "styles": "folder.style.open",
+    "docker": "folder.docker.open",
+    "font": "folder.font.open",
+    "fonts": "folder.font.open",
+    "api": "folder.api.open",
+    "service": "folder.api.open",
+    "services": "folder.api.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
