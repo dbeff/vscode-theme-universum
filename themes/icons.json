@@ -121,6 +121,7 @@
     "config.vite": { "iconPath": "./../src/icons/config.vite.svg" },
     "config.postcss": { "iconPath": "./../src/icons/config.postcss.svg" },
     "config.dotfile": { "iconPath": "./../src/icons/config.dotfile.svg" },
+    "config.vercel": { "iconPath": "./../src/icons/config.vercel.svg" },
     "folder.test.close": { "iconPath": "./../src/icons/folder.test.close.svg" },
     "folder.test.open": { "iconPath": "./../src/icons/folder.test.open.svg" },
     "folder.vs.close": { "iconPath": "./../src/icons/folder.vs.close.svg" },
@@ -231,6 +232,14 @@
     "folder.font.open": { "iconPath": "./../src/icons/folder.font.open.svg" },
     "folder.api.close": { "iconPath": "./../src/icons/folder.api.close.svg" },
     "folder.api.open": { "iconPath": "./../src/icons/folder.api.open.svg" },
+    "folder.image.close": {
+      "iconPath": "./../src/icons/folder.image.close.svg"
+    },
+    "folder.image.open": {
+      "iconPath": "./../src/icons/folder.image.open.svg"
+    },
+    "folder.job.close": { "iconPath": "./../src/icons/folder.job.close.svg" },
+    "folder.job.open": { "iconPath": "./../src/icons/folder.job.open.svg" },
     "_folder_dark": { "iconPath": "./../src/icons/folder.close.svg" },
     "_folder_open_dark": { "iconPath": "./../src/icons/folder.open.svg" }
   },
@@ -464,7 +473,8 @@
     "svelte.config.js": "file.svelte",
     "metro.config.js": "config.metro",
     "vite.config.js": "config.vite",
-    "postcss.config.js": "config.postcss"
+    "postcss.config.js": "config.postcss",
+    "vercel.json": "config.vercel"
   },
   "folderNames": {
     ".vscode": "folder.vs.close",
@@ -487,6 +497,7 @@
     "modules": "folder.lib.close",
     "docs": "folder.docs.close",
     "pages": "folder.page.close",
+    "views": "folder.page.close",
     "public": "folder.public.close",
     "client": "folder.public.close",
     "web": "folder.public.close",
@@ -515,14 +526,18 @@
     "storybook": "folder.storybook.close",
     "script": "folder.script.close",
     "scripts": "folder.script.close",
+    "js": "folder.script.close",
     "style": "folder.style.close",
     "styles": "folder.style.close",
+    "css": "folder.style.close",
     "docker": "folder.docker.close",
     "font": "folder.font.close",
     "fonts": "folder.font.close",
     "api": "folder.api.close",
     "service": "folder.api.close",
-    "services": "folder.api.close"
+    "services": "folder.api.close",
+    "images": "folder.image.close",
+    "jobs": "folder.job.close"
   },
   "folderNamesExpanded": {
     ".vscode": "folder.vs.open",
@@ -544,6 +559,7 @@
     "modules": "folder.lib.open",
     "docs": "folder.docs.open",
     "pages": "folder.page.open",
+    "views": "folder.page.open",
     "public": "folder.public.open",
     "client": "folder.public.open",
     "web": "folder.public.open",
@@ -572,14 +588,18 @@
     "storybook": "folder.storybook.open",
     "script": "folder.script.open",
     "scripts": "folder.script.open",
+    "js": "folder.script.open",
     "style": "folder.style.open",
     "styles": "folder.style.open",
+    "css": "folder.style.open",
     "docker": "folder.docker.open",
     "font": "folder.font.open",
     "fonts": "folder.font.open",
     "api": "folder.api.open",
     "service": "folder.api.open",
-    "services": "folder.api.open"
+    "services": "folder.api.open",
+    "images": "folder.image.open",
+    "jobs": "folder.job.open"
   },
   "languageIds": {
     "objective-c": "file.objc",
