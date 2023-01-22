@@ -13,7 +13,8 @@
     "start": "ts-node-dev --respawn ./src/index.ts",
     "prerelease": "npm run build",
     "release": "vsce publish",
-    "check-types": "tsc --noemit --skipLibCheck"
+    "check-types": "tsc --noemit --skipLibCheck",
+    "publish-patch": "vsce publish patch"
   },
   "engines": {
     "node": ">=15.0.0",
