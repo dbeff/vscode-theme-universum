@@ -1,9 +1,18 @@
 # Universum Theme
 
 
+
+
 ![Screenshot](https://raw.githubusercontent.com/dbeff/vscode-theme-universum/main/resources/screenshot.png)
 
 After using several themes for Visual Code I was never satisfied until I used [Plastic](https://plastictheme.com/). It's clean, simple and helped me a lot to read the code and detect the syntax quickly and consistently. However as I like to customize things in order to hopefully improve our development experience I decided to create this theme taking in consideration not only the syntax but also the editor interface keeping both consistent and very pleasing to the eye.
+
+
+## Sponsor
+
+If you liked this theme please consider supporting me here to continue maitaining and creating more themes and extensions.
+
+[![](https://img.shields.io/static/v1?label=Buy%20me%20a%20coffee&logo=GitHub&message=%E2%98%95&color=FFDD00)](https://www.buymeacoffee.com/danielbeffme)
 
 ## Icons
 
@@ -49,3 +58,5 @@ Ligature settings:
 ```
 #1E2031,#2C3849,#4190AB,#FFFFFF,#2F324C,#B7BBD4,#98C379,#4190AB,#1E2031,#B7BBD4
 ```
+
+
