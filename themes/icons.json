@@ -457,6 +457,7 @@
     "yarn.lock": "config.yarn",
     ".prettierrc.js": "config.prettier",
     "tsconfig.json": "config.tsconfig",
+    "tsconfig.node.json": "config.tsconfig",
     "angular.json": "config.angular",
     "gradle.properties": "file.gradle",
     "gradlew": "file.gradle",
@@ -473,6 +474,7 @@
     "svelte.config.js": "file.svelte",
     "metro.config.js": "config.metro",
     "vite.config.js": "config.vite",
+    "vite.config.ts": "config.vite",
     "postcss.config.js": "config.postcss",
     "vercel.json": "config.vercel"
   },
