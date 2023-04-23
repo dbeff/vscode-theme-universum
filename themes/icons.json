@@ -123,6 +123,7 @@
     "config.dotfile": { "iconPath": "./../src/icons/config.dotfile.svg" },
     "config.vercel": { "iconPath": "./../src/icons/config.vercel.svg" },
     "config.next": { "iconPath": "./../src/icons/config.next.svg" },
+    "config.netlify": { "iconPath": "./../src/icons/config.netlify.svg" },
     "folder.test.close": { "iconPath": "./../src/icons/folder.test.close.svg" },
     "folder.test.open": { "iconPath": "./../src/icons/folder.test.open.svg" },
     "folder.vs.close": { "iconPath": "./../src/icons/folder.vs.close.svg" },
@@ -478,7 +479,8 @@
     "vite.config.ts": "config.vite",
     "postcss.config.js": "config.postcss",
     "vercel.json": "config.vercel",
-    "next.config.js": "config.next"
+    "next.config.js": "config.next",
+    "netlify.toml": "config.netlify"
   },
   "folderNames": {
     ".vscode": "folder.vs.close",
